@@ -8,6 +8,7 @@ $(function() {
 
     initializeThemeMenu();
     initializeButtons();
+    initializeDragAndDrop();
 });
 
 function initializeThemeMenu() {
@@ -135,6 +136,30 @@ function initializeButtons() {
     });
 }
 
+function initializeDragAndDrop() {
+    $('#editor').on({
+        'dragover' : handleDragOver,
+        'dragleave': handleDragLeave,
+        'drop'     : handleFileSelect
+    });
+
+    // Disable drag/drop outside of editor
+    $(document).on({
+        dragenter: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            var dt = e.originalEvent.dataTransfer;
+            dt.effectAllowed = dt.dropEffect = 'none';
+        },
+        dragover: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            var dt = e.originalEvent.dataTransfer;
+            dt.effectAllowed = dt.dropEffect = 'none';
+        }
+    });
+}
+
 function disableToolbar() {
     $('.btn-toolbar .btn').addClass('disabled');
     $('#loader').fadeIn('fast');
@@ -221,4 +246,71 @@ function resetConsole() {
     $('#output pre').text('');
     $('#running-time').fadeOut('fast');
     $('#running-time pre').text('');
+}
+
+function handleFileSelect(jqEvent) {
+    var evt = jqEvent.originalEvent;
+
+    var files = evt.dataTransfer.files; // FileList object.
+
+    if (files.length !== 1) {
+        return;
+    }
+
+    var f = files[0];
+    var textMimeRE = new RegExp(/text\//);
+    if (!(f.type === "" || textMimeRE.test(f.type))) {
+        return;
+    }
+    evt.stopPropagation();
+    evt.preventDefault();
+
+//    f.name
+//    f.type || 'n/a'
+//    f.size, ' bytes, last modified: ',
+//    f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+
+
+    var reader = new FileReader();
+
+    reader.onload = function(progressEvt) {
+        editor.getSession().setValue(progressEvt.target.result);
+    };
+
+    reader.readAsText(f);
+    cleanUpDropDecoration(jqEvent.delegateTarget);
+}
+
+function handleDragOver(jqEvent) {
+    var evt = jqEvent.originalEvent;
+
+    var items = evt.dataTransfer.items;
+
+    if (items.length !== 1) {
+        return;
+    }
+
+    var item = items[0];
+    if (!(item.type === "" && item.kind === "file")) {
+        return;
+    }
+    evt.stopPropagation();
+    evt.preventDefault();
+
+    evt.dataTransfer.dropEffect = 'copy';
+
+    $(jqEvent.delegateTarget).css({
+        'outline'      : 'none',
+        'box-shadow'   : '0 0 10px 5px #9ecaed'
+    });
+}
+
+function handleDragLeave(jqEvent) {
+    cleanUpDropDecoration(jqEvent.delegateTarget);
+}
+
+function cleanUpDropDecoration(domNode) {
+    $(domNode).css({
+        'box-shadow'   : 'none'
+    });
 }
