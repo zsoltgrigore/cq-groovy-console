@@ -8,13 +8,29 @@ function initializeEditor() {
     window.editor = ace.edit('editor');
 
     var GroovyMode = ace.require('ace/mode/groovy').Mode;
+    var session = editor.getSession();
 
-    editor.getSession().setMode(new GroovyMode());
+    session.setMode(new GroovyMode());
+    session.setUseSoftTabs(false);
     editor.renderer.setShowPrintMargin(false);
+
+    editor.commands.addCommand({
+        name: 'tryImport',
+        bindKey: {win: 'Alt-Enter',  mac: 'Option-Enter'},
+        exec: function(editor) {
+            var selection = editor.getSelection();
+            var session = editor.getSession();
+            var currentWord = session.getTextRange(selection.getWordRange());
+            console.log("word at cursor: " + currentWord);
+        },
+        readOnly: false
+    });
 }
 
 function initializeThemeMenu() {
-    var theme = $.cookie('theme');
+    var theme = $.cookie('theme'),
+        listItems = $('#dropdown-themes').find('li');
+
 
     if (theme == null) {
         theme = 'ace/theme/idle_fingers';
@@ -22,7 +38,7 @@ function initializeThemeMenu() {
 
     editor.setTheme(theme);
 
-    var selectedElement = $.grep($('#dropdown-themes li'), function(element) {
+    var selectedElement = $.grep(listItems, function(element) {
         return $(element).find('a').data('target') == theme;
     });
 
@@ -30,12 +46,12 @@ function initializeThemeMenu() {
         $(selectedElement).addClass('active');
     }
 
-    $('#dropdown-themes li').click(function() {
+    listItems.click(function() {
         var theme = $(this).find('a').data('target');
 
         editor.setTheme(theme);
 
-        $('#dropdown-themes li').removeClass('active');
+        listItems.removeClass('active');
         $(this).addClass('active');
 
         $.cookie('theme', theme, { expires: 365 });

@@ -417,7 +417,7 @@
         <dependency>
             <groupId>com.citytechinc.cq</groupId>
             <artifactId>cq5-groovy-extension</artifactId>
-            <version>0.2.0-SNAPSHOT</version>
+            <version>0.2.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
