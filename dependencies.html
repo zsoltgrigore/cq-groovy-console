@@ -1,0 +1,3380 @@
+
+<!DOCTYPE html>
+<html  xml:lang="en" lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Project Dependencies | CQ Groovy Console</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<meta http-equiv="content-language" content="en" />
+		
+		<link href="./css/bootstrap.min.css" rel="stylesheet" />
+		<link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link href="./css/docs.css" rel="stylesheet" />
+		<link href="./css/reflow-skin.css" rel="stylesheet" />
+		
+		<link href="http://yandex.st/highlightjs/7.3/styles/github.min.css" rel="stylesheet" />
+		
+		<link href="./css/lightbox.css" rel="stylesheet" />
+		
+		<link href="./css/site.css" rel="stylesheet" />
+		<link href="./css/print.css" rel="stylesheet" media="print" />
+		
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-928005-4']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		</head>
+
+	<body class="page-dependencies project-cq-groovy-console" data-spy="scroll" data-offset="60" data-target="#toc-scroll-target">
+
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="./">CQ Groovy Console</a>
+					<div class="nav-collapse">
+						<ul class="nav pull-right">
+							<li><a href="https://github.com/Citytechinc/cq-groovy-console" title="GitHub" class="externalLink">GitHub </a></li>
+							<li><a href="index.html" title="Overview">Overview </a></li>
+							<li class="dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Documentation <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a href="project-info.html" title="Project Information">Project Information </a>
+										<ul class="dropdown-menu">
+											<li><a href="project-summary.html" title="Project Summary">Project Summary </a></li>
+											<li class="active"><a href="" title="Dependencies">Dependencies </a></li>
+											<li><a href="plugins.html" title="Project Plugins">Project Plugins </a></li>
+											<li><a href="license.html" title="Project License">Project License </a></li>
+										</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a href="project-reports.html" title="Project Reports">Project Reports </a>
+										<ul class="dropdown-menu">
+											<li><a href="surefire-report.html" title="Surefire Report">Surefire Report </a></li>
+											<li><a href="github-report.html" title="GitHub Report">GitHub Report </a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+		
+	<div class="container">
+	
+	<!-- Masthead
+	================================================== -->
+
+	
+	
+	<header class="jumbotron subhead">
+		<div class="row" id="banner">
+			<div class="span12">
+				<div class="pull-left">
+					<a href="http://www.citytechinc.com" id="bannerLeft"><img src="images/logo.png" alt="CITYTECH, Inc."></a>
+				</div>
+				<div class="pull-right">
+										<a href="./" id="bannerRight"><h1>CQ Groovy Console</h1></a>
+					<p class="lead"></p>
+				</div>
+			</div>
+		</div>
+
+
+	
+		</header>
+
+	<div class="main-body">
+	<div class="row">
+		<div class="span12">
+			<div class="body-content">
+<a name="Project_Dependencies"></a> 
+<div class="section"> 
+ <h2 id="Project_Dependencies">Project Dependencies</h2> 
+ <a name="Project_Dependencies_compile"></a> 
+ <div class="section"> 
+  <h3 id="compile">compile</h3> 
+  <p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th>GroupId</th> 
+     <th>ArtifactId</th> 
+     <th>Version</th> 
+     <th>Type</th> 
+     <th>License</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr class="b"> 
+     <td>com.adobe.granite</td> 
+     <td>com.adobe.granite.replication.core</td> 
+     <td>5.5.38</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.day.cq</td> 
+     <td>cq-commons</td> 
+     <td>5.6.2</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>com.day.cq</td> 
+     <td>cq-tagging</td> 
+     <td>5.6.2</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.day.cq.wcm</td> 
+     <td>cq-wcm-api</td> 
+     <td>5.6.4</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>javax.jcr</td> 
+     <td><a class="externalLink" href="http://www.jcp.org/en/jsr/detail?id=283">jcr</a></td> 
+     <td>2.0</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.day.com/dam/day/downloads/jsr283/day-spec-license.htm">Day Specification License</a>-<a class="externalLink" href="http://www.day.com/content/dam/day/downloads/jsr283/LICENSE.txt">Day Specification License addendum</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>javax.servlet</td> 
+     <td>servlet-api</td> 
+     <td>2.4</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.felix</td> 
+     <td><a class="externalLink" href="http://felix.apache.org/org.apache.felix.scr.annotations/">org.apache.felix.scr.annotations</a></td> 
+     <td>1.9.4</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.sling</td> 
+     <td><a class="externalLink" href="http://sling.apache.org/org.apache.sling.api">org.apache.sling.api</a></td> 
+     <td>2.3.0</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.sling</td> 
+     <td><a class="externalLink" href="http://sling.apache.org/org.apache.sling.jcr.api">org.apache.sling.jcr.api</a></td> 
+     <td>2.1.0</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.osgi</td> 
+     <td>org.osgi.core</td> 
+     <td>4.3.0</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.slf4j</td> 
+     <td><a class="externalLink" href="http://www.slf4j.org">slf4j-api</a></td> 
+     <td>1.6.4</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ </div> 
+ <a name="Project_Dependencies_test"></a> 
+ <div class="section"> 
+  <h3 id="test">test</h3> 
+  <p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th>GroupId</th> 
+     <th>ArtifactId</th> 
+     <th>Version</th> 
+     <th>Type</th> 
+     <th>License</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr class="b"> 
+     <td>com.citytechinc.cq</td> 
+     <td><a class="externalLink" href="http://code.citytechinc.com/cq-groovy-testing">cq-groovy-testing</a></td> 
+     <td>0.3.6</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>commons-io</td> 
+     <td><a class="externalLink" href="http://commons.apache.org/io/">commons-io</a></td> 
+     <td>2.2</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.commons</td> 
+     <td><a class="externalLink" href="http://commons.apache.org/exec/">commons-exec</a></td> 
+     <td>1.1</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.gebish</td> 
+     <td><a class="externalLink" href="http://www.gebish.org">geb-spock</a></td> 
+     <td>0.9.0</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.seleniumhq.selenium</td> 
+     <td><a class="externalLink" href="http://selenium.googlecode.com/selenium-firefox-driver/">selenium-firefox-driver</a></td> 
+     <td>2.31.0</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ </div> 
+ <a name="Project_Dependencies_provided"></a> 
+ <div class="section"> 
+  <h3 id="provided">provided</h3> 
+  <p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th>GroupId</th> 
+     <th>ArtifactId</th> 
+     <th>Version</th> 
+     <th>Type</th> 
+     <th>License</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr class="b"> 
+     <td>com.citytechinc.cq</td> 
+     <td><a class="externalLink" href="http://code.citytechinc.com/cq-groovy-extension">cq-groovy-extension</a></td> 
+     <td>0.3.4</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.codehaus.groovy</td> 
+     <td><a class="externalLink" href="http://groovy.codehaus.org/">groovy-all</a></td> 
+     <td>2.1.3</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ </div> 
+</div> 
+<a name="Project_Transitive_Dependencies"></a> 
+<div class="section"> 
+ <h2 id="Project_Transitive_Dependencies">Project Transitive Dependencies</h2> 
+ <p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p> 
+ <a name="Project_Transitive_Dependencies_compile"></a> 
+ <div class="section"> 
+  <h3 id="compile">compile</h3> 
+  <p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th>GroupId</th> 
+     <th>ArtifactId</th> 
+     <th>Version</th> 
+     <th>Type</th> 
+     <th>License</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr class="b"> 
+     <td>com.adobe.granite</td> 
+     <td>com.adobe.granite.crypto</td> 
+     <td>0.0.22</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>javax.activation</td> 
+     <td><a class="externalLink" href="http://java.sun.com/products/javabeans/jaf/index.jsp">activation</a></td> 
+     <td>1.1</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="https://glassfish.dev.java.net/public/CDDLv1.0.html">Common Development and Distribution License (CDDL) v1.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>javax.mail</td> 
+     <td><a class="externalLink" href="https://glassfish.dev.java.net/javaee5/mail/">mail</a></td> 
+     <td>1.4.1</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="https://glassfish.dev.java.net/public/CDDLv1.0.html">Common Development and Distribution License (CDDL) v1.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.commons</td> 
+     <td><a class="externalLink" href="http://commons.apache.org/email/">commons-email</a></td> 
+     <td>1.2</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ </div> 
+ <a name="Project_Transitive_Dependencies_test"></a> 
+ <div class="section"> 
+  <h3 id="test">test</h3> 
+  <p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th>GroupId</th> 
+     <th>ArtifactId</th> 
+     <th>Version</th> 
+     <th>Classifier</th> 
+     <th>Type</th> 
+     <th>License</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr class="b"> 
+     <td>asm</td> 
+     <td><a class="externalLink" href="http://asm.objectweb.org/asm/">asm</a></td> 
+     <td>3.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>cglib</td> 
+     <td><a class="externalLink" href="http://cglib.sourceforge.net/">cglib-nodep</a></td> 
+     <td>2.2.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">ASF 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>com.adobe.granite</td> 
+     <td>com.adobe.granite.i18n</td> 
+     <td>5.5.8</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.adobe.granite</td> 
+     <td>com.adobe.granite.xssprotection</td> 
+     <td>5.5.22</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>com.adobe.xmp</td> 
+     <td>xmpcore</td> 
+     <td>5.0.20</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.day.cq</td> 
+     <td>cq-search</td> 
+     <td>5.6.4</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>com.day.cq</td> 
+     <td>cq-statistics</td> 
+     <td>5.6.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.day.cq.wcm</td> 
+     <td>cq-msm-api</td> 
+     <td>5.6.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>com.day.cq.wcm</td> 
+     <td>cq-wcm-commons</td> 
+     <td>5.6.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.day.cq.wcm</td> 
+     <td>cq-wcm-core</td> 
+     <td>5.6.10</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>com.drewnoakes</td> 
+     <td><a class="externalLink" href="http://code.google.com/p/metadata-extractor/">metadata-extractor</a></td> 
+     <td>2.6.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.google.guava</td> 
+     <td><a class="externalLink" href="http://code.google.com/p/guava-libraries/guava">guava</a></td> 
+     <td>14.0.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>com.googlecode.juniversalchardet</td> 
+     <td><a class="externalLink" href="http://juniversalchardet.googlecode.com/">juniversalchardet</a></td> 
+     <td>1.0.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.mozilla.org/MPL/MPL-1.1.html">Mozilla Public License 1.1 (MPL 1.1)</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>com.googlecode.mp4parser</td> 
+     <td><a class="externalLink" href="http://code.google.com/p/mp4parser/">isoparser</a></td> 
+     <td>1.0-RC-1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>commons-codec</td> 
+     <td><a class="externalLink" href="http://commons.apache.org/codec/">commons-codec</a></td> 
+     <td>1.5</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>commons-collections</td> 
+     <td><a class="externalLink" href="http://commons.apache.org/collections/">commons-collections</a></td> 
+     <td>3.2.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>commons-dbcp</td> 
+     <td>commons-dbcp</td> 
+     <td>1.2.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>/LICENSE.txt</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>commons-httpclient</td> 
+     <td><a class="externalLink" href="http://jakarta.apache.org/httpcomponents/httpclient-3.x/">commons-httpclient</a></td> 
+     <td>3.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>commons-logging</td> 
+     <td><a class="externalLink" href="http://commons.apache.org/logging">commons-logging</a></td> 
+     <td>1.1.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>commons-pool</td> 
+     <td>commons-pool</td> 
+     <td>1.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>/LICENSE.txt</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>concurrent</td> 
+     <td>concurrent</td> 
+     <td>1.3.4</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>&gt;http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/concurrent/intro.html</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>de.l3s.boilerpipe</td> 
+     <td><a class="externalLink" href="http://code.google.com/p/boilerpipe/">boilerpipe</a></td> 
+     <td>1.1.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>Apache License 2.0</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>dom4j</td> 
+     <td><a class="externalLink" href="http://dom4j.org">dom4j</a></td> 
+     <td>1.6.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>edu.ucar</td> 
+     <td><a class="externalLink" href="http://www.unidata.ucar.edu/software/netcdf-java/">netcdf</a></td> 
+     <td>4.2-min</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.unidata.ucar.edu/software/netcdf/copyright.html">(MIT-style) netCDF C library license.</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>javax.servlet</td> 
+     <td>jsp-api</td> 
+     <td>2.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>jdom</td> 
+     <td>jdom</td> 
+     <td>1.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>junit</td> 
+     <td><a class="externalLink" href="http://junit.org">junit</a></td> 
+     <td>4.8.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>junit</td> 
+     <td><a class="externalLink" href="http://junit.org">junit-dep</a></td> 
+     <td>4.10</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>net.java.dev.jna</td> 
+     <td><a class="externalLink" href="https://github.com/twall/jna">jna</a></td> 
+     <td>3.4.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://creativecommons.org/licenses/LGPL/2.1/">LGPL, version 2.1</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>net.java.dev.jna</td> 
+     <td><a class="externalLink" href="https://github.com/twall/jna">platform</a></td> 
+     <td>3.4.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://creativecommons.org/licenses/LGPL/2.1/">LGPL, version 2.1</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.commons</td> 
+     <td><a class="externalLink" href="http://commons.apache.org/compress/">commons-compress</a></td> 
+     <td>1.4.1-withoutxz</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.derby</td> 
+     <td><a class="externalLink" href="http://db.apache.org/derby/derby/">derby</a></td> 
+     <td>10.5.3.0_1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.geronimo.specs</td> 
+     <td><a class="externalLink" href="http://geronimo.apache.org/specs/geronimo-stax-api_1.0_spec">geronimo-stax-api_1.0_spec</a></td> 
+     <td>1.0.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.httpcomponents</td> 
+     <td><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">httpclient</a></td> 
+     <td>4.2.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>LICENSE.txt</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.httpcomponents</td> 
+     <td><a class="externalLink" href="http://hc.apache.org/httpcomponents-core-ga">httpcore</a></td> 
+     <td>4.2.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>LICENSE.txt</td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.jackrabbit</td> 
+     <td><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-api/">jackrabbit-api</a></td> 
+     <td>2.5.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.jackrabbit</td> 
+     <td><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-parent/jackrabbit-core/">jackrabbit-core</a></td> 
+     <td>2.2.9</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.jackrabbit</td> 
+     <td><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-jcr-commons/">jackrabbit-jcr-commons</a></td> 
+     <td>2.5.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.jackrabbit</td> 
+     <td><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-spi/">jackrabbit-spi</a></td> 
+     <td>2.5.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.jackrabbit</td> 
+     <td><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-spi-commons/">jackrabbit-spi-commons</a></td> 
+     <td>2.5.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.james</td> 
+     <td><a class="externalLink" href="http://james.apache.org/mime4j/apache-mime4j-core">apache-mime4j-core</a></td> 
+     <td>0.7.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.james</td> 
+     <td><a class="externalLink" href="http://james.apache.org/mime4j/apache-mime4j-dom">apache-mime4j-dom</a></td> 
+     <td>0.7.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.lucene</td> 
+     <td><a class="externalLink" href="http://lucene.apache.org/java/lucene-core">lucene-core</a></td> 
+     <td>2.4.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.pdfbox</td> 
+     <td><a class="externalLink" href="http://pdfbox.apache.org/">fontbox</a></td> 
+     <td>1.7.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.pdfbox</td> 
+     <td><a class="externalLink" href="http://www.apache.org/pdfbox-parent/jempbox/">jempbox</a></td> 
+     <td>1.7.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.pdfbox</td> 
+     <td><a class="externalLink" href="http://www.apache.org/pdfbox-parent/pdfbox/">pdfbox</a></td> 
+     <td>1.7.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.poi</td> 
+     <td><a class="externalLink" href="http://poi.apache.org/">poi</a></td> 
+     <td>3.8</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.poi</td> 
+     <td><a class="externalLink" href="http://poi.apache.org/">poi-ooxml</a></td> 
+     <td>3.8</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.poi</td> 
+     <td><a class="externalLink" href="http://poi.apache.org/">poi-ooxml-schemas</a></td> 
+     <td>3.8</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.poi</td> 
+     <td><a class="externalLink" href="http://poi.apache.org/">poi-scratchpad</a></td> 
+     <td>3.8</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.sling</td> 
+     <td><a class="externalLink" href="http://sling.apache.org/org.apache.sling.adapter">org.apache.sling.adapter</a></td> 
+     <td>2.1.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.sling</td> 
+     <td><a class="externalLink" href="http://sling.apache.org/org.apache.sling.commons.testing">org.apache.sling.commons.testing</a></td> 
+     <td>2.0.10</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.sling</td> 
+     <td><a class="externalLink" href="http://sling.apache.org/org.apache.sling.jcr.resource">org.apache.sling.jcr.resource</a></td> 
+     <td>2.2.2</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.tika</td> 
+     <td><a class="externalLink" href="http://tika.apache.org/">tika-core</a></td> 
+     <td>1.3-r1436209</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.apache.tika</td> 
+     <td><a class="externalLink" href="http://tika.apache.org/">tika-parsers</a></td> 
+     <td>1.3-r1436209</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.apache.xmlbeans</td> 
+     <td><a class="externalLink" href="http://xmlbeans.apache.org">xmlbeans</a></td> 
+     <td>2.3.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.aspectj</td> 
+     <td><a class="externalLink" href="http://www.aspectj.org">aspectjrt</a></td> 
+     <td>1.6.11</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License - v 1.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.bouncycastle</td> 
+     <td><a class="externalLink" href="http://www.bouncycastle.org/java.html">bcmail-jdk15</a></td> 
+     <td>1.45</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.bouncycastle.org/licence.html">Bouncy Castle Licence</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.bouncycastle</td> 
+     <td><a class="externalLink" href="http://www.bouncycastle.org/java.html">bcprov-jdk15</a></td> 
+     <td>1.45</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.bouncycastle.org/licence.html">Bouncy Castle Licence</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.ccil.cowan.tagsoup</td> 
+     <td><a class="externalLink" href="http://home.ccil.org/~cowan/XML/tagsoup/">tagsoup</a></td> 
+     <td>1.2.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.gagravarr</td> 
+     <td><a class="externalLink" href="https://github.com/Gagravarr/VorbisJava">vorbis-java-core</a></td> 
+     <td>0.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.gagravarr</td> 
+     <td><a class="externalLink" href="https://github.com/Gagravarr/VorbisJava">vorbis-java-core</a></td> 
+     <td>0.1</td> 
+     <td>tests</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.gagravarr</td> 
+     <td><a class="externalLink" href="https://github.com/Gagravarr/VorbisJava">vorbis-java-tika</a></td> 
+     <td>0.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.gebish</td> 
+     <td><a class="externalLink" href="http://www.gebish.org">geb-ast</a></td> 
+     <td>0.9.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.gebish</td> 
+     <td><a class="externalLink" href="http://www.gebish.org">geb-core</a></td> 
+     <td>0.9.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.gebish</td> 
+     <td><a class="externalLink" href="http://www.gebish.org">geb-implicit-assertions</a></td> 
+     <td>0.9.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.hamcrest</td> 
+     <td><a class="externalLink" href="https://github.com/hamcrest/JavaHamcrest/hamcrest-core">hamcrest-core</a></td> 
+     <td>1.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.hamcrest</td> 
+     <td>hamcrest-library</td> 
+     <td>1.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD style</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.jmock</td> 
+     <td>jmock</td> 
+     <td>2.5.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://jmock.org/license.html">BSD style</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.jmock</td> 
+     <td>jmock-junit4</td> 
+     <td>2.5.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://jmock.org/license.html">BSD style</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.json</td> 
+     <td><a class="externalLink" href="http://www.json.org/java/index.html">json</a></td> 
+     <td>20080701</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.json.org/license.html">provided without support or warranty</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.objenesis</td> 
+     <td><a class="externalLink" href="http://objenesis.org">objenesis</a></td> 
+     <td>1.3</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.osgi</td> 
+     <td><a class="externalLink" href="http://www.osgi.org">org.osgi.compendium</a></td> 
+     <td>4.3.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.seleniumhq.selenium</td> 
+     <td><a class="externalLink" href="http://selenium.googlecode.com/selenium-api/">selenium-api</a></td> 
+     <td>2.31.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.seleniumhq.selenium</td> 
+     <td><a class="externalLink" href="http://selenium.googlecode.com/selenium-remote-driver/">selenium-remote-driver</a></td> 
+     <td>2.31.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.slf4j</td> 
+     <td><a class="externalLink" href="http://www.slf4j.org">jcl-over-slf4j</a></td> 
+     <td>1.6.4</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.spockframework</td> 
+     <td><a class="externalLink" href="http://spockframework.org">spock-core</a></td> 
+     <td>0.7-groovy-2.0</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.springframework</td> 
+     <td>org.springframework.test</td> 
+     <td>3.2.2.RELEASE</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td>-</td> 
+    </tr> 
+    <tr class="b"> 
+     <td>org.springframework</td> 
+     <td><a class="externalLink" href="https://github.com/SpringSource/spring-framework">spring-core</a></td> 
+     <td>3.2.2.RELEASE</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>rhino</td> 
+     <td><a class="externalLink" href="http://www.mozilla.org/rhino/">js</a></td> 
+     <td>1.6R6</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.mozilla.org/MPL/MPL-1.1.html">Mozilla Public License version 1.1</a></td> 
+    </tr> 
+    <tr class="b"> 
+     <td>rome</td> 
+     <td><a class="externalLink" href="https://rome.dev.java.net/">rome</a></td> 
+     <td>0.9</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>xerces</td> 
+     <td><a class="externalLink" href="http://xerces.apache.org/xerces2-j/">xercesImpl</a></td> 
+     <td>2.8.1</td> 
+     <td>-</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ </div> 
+ <a name="Project_Transitive_Dependencies_provided"></a> 
+ <div class="section"> 
+  <h3 id="provided">provided</h3> 
+  <p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th>GroupId</th> 
+     <th>ArtifactId</th> 
+     <th>Version</th> 
+     <th>Type</th> 
+     <th>License</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr class="b"> 
+     <td>org.apache.felix</td> 
+     <td><a class="externalLink" href="http://felix.apache.org/org.apache.felix.scr/">org.apache.felix.scr</a></td> 
+     <td>1.6.3-R1409029</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td> 
+    </tr> 
+    <tr class="a"> 
+     <td>org.slf4j</td> 
+     <td><a class="externalLink" href="http://www.slf4j.org">slf4j-nop</a></td> 
+     <td>1.6.4</td> 
+     <td>jar</td> 
+     <td><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ </div> 
+</div> 
+<a name="Project_Dependency_Graph"></a> 
+<div class="section"> 
+ <h2 id="Project_Dependency_Graph">Project Dependency Graph</h2> 
+ <script language="javascript" type="text/javascript">
+      function toggleDependencyDetail( divId, imgId )
+      {
+        var div = document.getElementById( divId );
+        var img = document.getElementById( imgId );
+        if( div.style.display == '' )
+        {
+          div.style.display = 'none';
+          img.src='./images/icon_info_sml.gif';
+        }
+        else
+        {
+          div.style.display = '';
+          img.src='./images/close.gif';
+        }
+      }
+</script> 
+ <a name="Dependency_Tree"></a> 
+ <div class="section"> 
+  <h3 id="Dependency_Tree">Dependency Tree</h3> 
+  <ul> 
+   <li>com.citytechinc.cq:cq-groovy-console:jar:4.1.1 <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1651081841"><i class="icon-info-sign"></i></button> 
+    <div id="_1651081841" style="" class=" collapse"> 
+     <table border="0" class="bodyTable table table-striped table-hover"> 
+      <thead> 
+       <tr class="a"> 
+        <th>CQ Groovy Console</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="b"> 
+        <td><p><b>Description: </b>The CQ Groovy Console provides an interface for running Groovy scripts in the Adobe CQ5 container. Scripts can be created to manipulate content in the JCR, call OSGi services, or execute arbitrary code using the CQ, Sling, or JCR APIs.</p><p><b>URL: </b><a class="externalLink" href="http://code.citytechinc.com/cq-groovy-console">http://code.citytechinc.com/cq-groovy-console</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">The Apache Software License, Version 2.0</a></p></td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+    <ul> 
+     <li>javax.jcr:jcr:jar:2.0 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1838037909"><i class="icon-info-sign"></i></button> 
+      <div id="_1838037909" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Content Repository for JavaTM Technology API</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>The Content Repository API for JavaTM Technology Version 2.0 is specified by JSR-283. This module contains the complete API as specified.</p><p><b>URL: </b><a class="externalLink" href="http://www.jcp.org/en/jsr/detail?id=283">http://www.jcp.org/en/jsr/detail?id=283</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.day.com/dam/day/downloads/jsr283/day-spec-license.htm">Day Specification License</a><a class="externalLink" href="http://www.day.com/content/dam/day/downloads/jsr283/LICENSE.txt">Day Specification License addendum</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>javax.servlet:servlet-api:jar:2.4 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_560050002"><i class="icon-info-sign"></i></button> 
+      <div id="_560050002" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>servlet-api</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>org.osgi:org.osgi.core:jar:4.3.0 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_377874851"><i class="icon-info-sign"></i></button> 
+      <div id="_377874851" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>org.osgi.core</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>org.apache.sling:org.apache.sling.api:jar:2.3.0 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1284228181"><i class="icon-info-sign"></i></button> 
+      <div id="_1284228181" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Apache Sling API</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>The Apache Sling API defines an extension to the Servlet API 2.4 to provide access to content and unified access to request parameters hiding the differences between the different methods of transferring parameters from client to server. Note that the Apache Sling API bundle does not include the Servlet API but instead requires the API to be provided by the Servlet container in which the Apache Sling framework is running or by another bundle.</p><p><b>URL: </b><a class="externalLink" href="http://sling.apache.org/org.apache.sling.api">http://sling.apache.org/org.apache.sling.api</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>org.apache.sling:org.apache.sling.jcr.api:jar:2.1.0 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_409240927"><i class="icon-info-sign"></i></button> 
+      <div id="_409240927" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Apache Sling Repository API Bundle</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>This OSGi bundle provides the JCR packages as well as a helper service interface to be implemented and provided by repository providers.</p><p><b>URL: </b><a class="externalLink" href="http://sling.apache.org/org.apache.sling.jcr.api">http://sling.apache.org/org.apache.sling.jcr.api</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>com.day.cq.wcm:cq-wcm-api:jar:5.6.4 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1904267749"><i class="icon-info-sign"></i></button> 
+      <div id="_1904267749" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Day Communique 5 WCM API</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Day Communique 5 WCM API Bundle</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>com.day.cq:cq-commons:jar:5.6.2 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_54446833"><i class="icon-info-sign"></i></button> 
+      <div id="_54446833" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Day Communique 5 Commons Library</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Bundle implementing the common functionality for the Communique 5 platform</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <ul> 
+       <li>org.apache.commons:commons-email:jar:1.2 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1364061257"><i class="icon-info-sign"></i></button> 
+        <div id="_1364061257" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Commons Email</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Commons-Email aims to provide an API for sending email. It is built on top of the JavaMail API, which it aims to simplify.</p><p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/email/">http://commons.apache.org/email/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>javax.mail:mail:jar:1.4.1 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1461609409"><i class="icon-info-sign"></i></button> 
+          <div id="_1461609409" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>JavaMail API</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>The JavaMail API provides a platform-independent and protocol-independent framework to build mail and messaging applications.</p><p><b>URL: </b><a class="externalLink" href="https://glassfish.dev.java.net/javaee5/mail/">https://glassfish.dev.java.net/javaee5/mail/</a></p><p><b>Project License: </b><a class="externalLink" href="https://glassfish.dev.java.net/public/CDDLv1.0.html">Common Development and Distribution License (CDDL) v1.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>javax.activation:activation:jar:1.1 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_825542079"><i class="icon-info-sign"></i></button> 
+          <div id="_825542079" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>JavaBeans Activation Framework (JAF)</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>JavaBeans Activation Framework (JAF) is a standard extension to the Java platform that lets you take advantage of standard services to: determine the type of an arbitrary piece of data; encapsulate access to it; discover the operations available on it; and instantiate the appropriate bean to perform the operation(s).</p><p><b>URL: </b><a class="externalLink" href="http://java.sun.com/products/javabeans/jaf/index.jsp">http://java.sun.com/products/javabeans/jaf/index.jsp</a></p><p><b>Project License: </b><a class="externalLink" href="https://glassfish.dev.java.net/public/CDDLv1.0.html">Common Development and Distribution License (CDDL) v1.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+        </ul></li> 
+      </ul></li> 
+     <li>com.day.cq:cq-tagging:jar:5.6.2 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_603499335"><i class="icon-info-sign"></i></button> 
+      <div id="_603499335" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Day Communique 5 Tagging</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Support for tagging of content, in a free-form tagging style (Web 2.0) but also in the form of a fixed, administered taxonomy.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>com.adobe.granite:com.adobe.granite.replication.core:jar:5.5.38 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_585722727"><i class="icon-info-sign"></i></button> 
+      <div id="_585722727" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Adobe Granite Replication</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>The Adobe Granite replication bundle.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <ul> 
+       <li>com.adobe.granite:com.adobe.granite.crypto:jar:0.0.22 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_421952612"><i class="icon-info-sign"></i></button> 
+        <div id="_421952612" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Adobe Granite Crypto Support</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>The Crypto Support bundle provides a CryptoSupport services which allows applications to encrypt and decrypt binary and String data. Encryption is based on the symmetric AES/CBC/PKCS5Padding (AES algorithm, CBC mode with PKCS5 padding) from the RSA JSafe libary.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+      </ul></li> 
+     <li>org.slf4j:slf4j-api:jar:1.6.4 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_844901090"><i class="icon-info-sign"></i></button> 
+      <div id="_844901090" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>SLF4J API Module</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>The slf4j API</p><p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.4 (compile) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1073986975"><i class="icon-info-sign"></i></button> 
+      <div id="_1073986975" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Annotations for SCR</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Annotations for generating OSGi service descriptors.</p><p><b>URL: </b><a class="externalLink" href="http://felix.apache.org/org.apache.felix.scr.annotations/">http://felix.apache.org/org.apache.felix.scr.annotations/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>org.codehaus.groovy:groovy-all:jar:2.1.3 (provided) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_471772264"><i class="icon-info-sign"></i></button> 
+      <div id="_471772264" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Groovy</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Groovy: A powerful, dynamic language for the JVM</p><p><b>URL: </b><a class="externalLink" href="http://groovy.codehaus.org/">http://groovy.codehaus.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>com.citytechinc.cq:cq-groovy-extension:jar:0.3.4 (provided) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1601870546"><i class="icon-info-sign"></i></button> 
+      <div id="_1601870546" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>CQ Groovy Extension</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>OSGi bundle containing Groovy metaclasses, builders, and services for Adobe CQ5.</p><p><b>URL: </b><a class="externalLink" href="http://code.citytechinc.com/cq-groovy-extension">http://code.citytechinc.com/cq-groovy-extension</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <ul> 
+       <li>org.slf4j:slf4j-nop:jar:1.6.4 (provided) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1292970407"><i class="icon-info-sign"></i></button> 
+        <div id="_1292970407" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>SLF4J NOP Binding</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>The slf4j NOP binding</p><p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>org.apache.felix:org.apache.felix.scr:jar:1.6.3-R1409029 (provided) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1745140434"><i class="icon-info-sign"></i></button> 
+        <div id="_1745140434" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Apache Felix Declarative Services</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Implementation of the Declarative Services specification 1.2</p><p><b>URL: </b><a class="externalLink" href="http://felix.apache.org/org.apache.felix.scr/">http://felix.apache.org/org.apache.felix.scr/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+      </ul></li> 
+     <li>com.citytechinc.cq:cq-groovy-testing:jar:0.3.6 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1305397285"><i class="icon-info-sign"></i></button> 
+      <div id="_1305397285" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>CQ Groovy Testing Tools</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Testing module for Adobe CQ5 projects containing a Spock specification using an in-memory repository for JCR session-based testing. Also includes basic Sling resource implementations for testing interactions between CQ objects.</p><p><b>URL: </b><a class="externalLink" href="http://code.citytechinc.com/cq-groovy-testing">http://code.citytechinc.com/cq-groovy-testing</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <ul> 
+       <li>javax.servlet:jsp-api:jar:2.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1691551109"><i class="icon-info-sign"></i></button> 
+        <div id="_1691551109" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>jsp-api</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>com.day.cq.wcm:cq-wcm-core:jar:5.6.10 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1194723791"><i class="icon-info-sign"></i></button> 
+        <div id="_1194723791" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Day Communique 5 WCM Core Implementation</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Bundle implementing the core WCM functionality for Communique 5</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>com.adobe.granite:com.adobe.granite.xssprotection:jar:5.5.22 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1854599983"><i class="icon-info-sign"></i></button> 
+          <div id="_1854599983" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Adobe Granite XSS Protection</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Adobe Granite bundle for providing XSS protection based on the OWASP AntiSamy and ESAPI libraries.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>com.adobe.granite:com.adobe.granite.i18n:jar:5.5.8 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_167604232"><i class="icon-info-sign"></i></button> 
+          <div id="_167604232" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Adobe Granite I18N Module</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>The parent project for Granite, the ES Platform</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+        </ul></li> 
+       <li>com.day.cq.wcm:cq-wcm-commons:jar:5.6.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_610602656"><i class="icon-info-sign"></i></button> 
+        <div id="_610602656" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Day Communique 5 WCM Commons</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Common classes used for WCM.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>com.day.cq.wcm:cq-msm-api:jar:5.6.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_72974359"><i class="icon-info-sign"></i></button> 
+        <div id="_72974359" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Day Communique 5 WCM Multi Site Management API</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Day Communique WCM Multi Site Management API</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>com.day.cq:cq-search:jar:5.6.4 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1245876244"><i class="icon-info-sign"></i></button> 
+        <div id="_1245876244" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Day Communique 5 Search</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>This module provides interfaces to search for content in CQ applications.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>com.day.cq:cq-statistics:jar:5.6.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_966224253"><i class="icon-info-sign"></i></button> 
+          <div id="_966224253" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Day Communique 5 Statistics</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>This module gathers statistical information about queries and picked results and provides reports on that data.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+        </ul></li> 
+       <li>org.apache.sling:org.apache.sling.jcr.resource:jar:2.2.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_348566829"><i class="icon-info-sign"></i></button> 
+        <div id="_348566829" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Apache Sling JCR Resource Resolver</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>This bundle provides the JCR based ResourceResolver.</p><p><b>URL: </b><a class="externalLink" href="http://sling.apache.org/org.apache.sling.jcr.resource">http://sling.apache.org/org.apache.sling.jcr.resource</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>org.osgi:org.osgi.compendium:jar:4.3.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_2017077657"><i class="icon-info-sign"></i></button> 
+        <div id="_2017077657" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>osgi.cmpn</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>OSGi Service Platform Release 4 Version 4.3, Compendium Interfaces and Classes for use in compiling bundles.</p><p><b>URL: </b><a class="externalLink" href="http://www.osgi.org">http://www.osgi.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>com.google.guava:guava:jar:14.0.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_108454587"><i class="icon-info-sign"></i></button> 
+        <div id="_108454587" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Guava: Google Core Libraries for Java</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Guava is a suite of core and expanded libraries that include utility classes, google's collections, io classes, and much much more. Guava has two code dependencies - javax.annotation per the JSR-305 spec and javax.inject per the JSR-330 spec.</p><p><b>URL: </b><a class="externalLink" href="http://code.google.com/p/guava-libraries/guava">http://code.google.com/p/guava-libraries/guava</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>org.apache.sling:org.apache.sling.commons.testing:jar:2.0.10 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1296879213"><i class="icon-info-sign"></i></button> 
+        <div id="_1296879213" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Apache Sling Testing Utilities</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Tools and utilities for automated testing of Sling modules</p><p><b>URL: </b><a class="externalLink" href="http://sling.apache.org/org.apache.sling.commons.testing">http://sling.apache.org/org.apache.sling.commons.testing</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>org.apache.jackrabbit:jackrabbit-api:jar:2.5.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_781430463"><i class="icon-info-sign"></i></button> 
+          <div id="_781430463" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Apache Jackrabbit API</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Jacrabbit-specific extensions to the JCR API</p><p><b>URL: </b><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-api/">http://jackrabbit.apache.org/jackrabbit-api/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.5.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1347776263"><i class="icon-info-sign"></i></button> 
+          <div id="_1347776263" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Jackrabbit JCR Commons</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>General purpose classes for use with the JCR API</p><p><b>URL: </b><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-jcr-commons/">http://jackrabbit.apache.org/jackrabbit-jcr-commons/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>org.apache.jackrabbit:jackrabbit-core:jar:2.2.9 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1453816399"><i class="icon-info-sign"></i></button> 
+          <div id="_1453816399" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Jackrabbit Core</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Jackrabbit content repository implementation</p><p><b>URL: </b><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-parent/jackrabbit-core/">http://jackrabbit.apache.org/jackrabbit-parent/jackrabbit-core/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div> 
+          <ul> 
+           <li>concurrent:concurrent:jar:1.3.4 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1730150091"><i class="icon-info-sign"></i></button> 
+            <div id="_1730150091" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Dough Lea's util.concurrent package</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b><a class="externalLink" href="&gt;http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/concurrent/intro.html">Public domain, Sun Microsoystems</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+           <li>commons-collections:commons-collections:jar:3.2.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_876899318"><i class="icon-info-sign"></i></button> 
+            <div id="_876899318" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Commons Collections</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>Types that extend and augment the Java Collections Framework.</p><p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/collections/">http://commons.apache.org/collections/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+           <li>commons-dbcp:commons-dbcp:jar:1.2.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1918075594"><i class="icon-info-sign"></i></button> 
+            <div id="_1918075594" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Commons DBCP</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>Commons Database Connection Pooling</p><p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p><p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div> 
+            <ul> 
+             <li>commons-pool:commons-pool:jar:1.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1457859490"><i class="icon-info-sign"></i></button> 
+              <div id="_1457859490" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Commons Pool</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Commons Object Pooling Library</p><p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p><p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+            </ul></li> 
+           <li>org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.5.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1712549715"><i class="icon-info-sign"></i></button> 
+            <div id="_1712549715" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Jackrabbit SPI Commons</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>The Apache Jackrabbit™ content repository is a fully conforming implementation of the Content Repository for Java Technology API (JCR, specified in JSR 170 and 283). A content repository is a hierarchical content store with support for structured and unstructured content, full text search, versioning, transactions, observation, and more. Apache Jackrabbit is a project of the Apache Software Foundation.</p><p><b>URL: </b><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-spi-commons/">http://jackrabbit.apache.org/jackrabbit-spi-commons/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+           <li>org.apache.jackrabbit:jackrabbit-spi:jar:2.5.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1588645850"><i class="icon-info-sign"></i></button> 
+            <div id="_1588645850" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Jackrabbit SPI</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>The Apache Jackrabbit™ content repository is a fully conforming implementation of the Content Repository for Java Technology API (JCR, specified in JSR 170 and 283). A content repository is a hierarchical content store with support for structured and unstructured content, full text search, versioning, transactions, observation, and more. Apache Jackrabbit is a project of the Apache Software Foundation.</p><p><b>URL: </b><a class="externalLink" href="http://jackrabbit.apache.org/jackrabbit-spi/">http://jackrabbit.apache.org/jackrabbit-spi/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+           <li>org.apache.tika:tika-parsers:jar:1.3-r1436209 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_444898100"><i class="icon-info-sign"></i></button> 
+            <div id="_444898100" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Apache Tika parsers</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>Apache Tika is a toolkit for detecting and extracting metadata and structured text content from various documents using existing parser libraries.</p><p><b>URL: </b><a class="externalLink" href="http://tika.apache.org/">http://tika.apache.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div> 
+            <ul> 
+             <li>org.apache.tika:tika-core:jar:1.3-r1436209 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1832379171"><i class="icon-info-sign"></i></button> 
+              <div id="_1832379171" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache Tika core</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Apache Tika is a toolkit for detecting and extracting metadata and structured text content from various documents using existing parser libraries.</p><p><b>URL: </b><a class="externalLink" href="http://tika.apache.org/">http://tika.apache.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.gagravarr:vorbis-java-tika:jar:0.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1037397965"><i class="icon-info-sign"></i></button> 
+              <div id="_1037397965" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache Tika plugin for Ogg, Vorbis and FLAC</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Ogg and Vorbis toolkit and tools for Java</p><p><b>URL: </b><a class="externalLink" href="https://github.com/Gagravarr/VorbisJava">https://github.com/Gagravarr/VorbisJava</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <ul> 
+               <li>org.gagravarr:vorbis-java-core:jar:tests:0.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_119201271"><i class="icon-info-sign"></i></button> 
+                <div id="_119201271" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>Ogg and Vorbis for Java, Core</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>Ogg and Vorbis toolkit and tools for Java</p><p><b>URL: </b><a class="externalLink" href="https://github.com/Gagravarr/VorbisJava">https://github.com/Gagravarr/VorbisJava</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+              </ul></li> 
+             <li>org.apache.james:apache-mime4j-core:jar:0.7.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1286567646"><i class="icon-info-sign"></i></button> 
+              <div id="_1286567646" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache JAMES Mime4j (Core)</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Java stream based MIME message parser</p><p><b>URL: </b><a class="externalLink" href="http://james.apache.org/mime4j/apache-mime4j-core">http://james.apache.org/mime4j/apache-mime4j-core</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.apache.james:apache-mime4j-dom:jar:0.7.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_577619216"><i class="icon-info-sign"></i></button> 
+              <div id="_577619216" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache JAMES Mime4j (DOM)</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Java MIME Document Object Model</p><p><b>URL: </b><a class="externalLink" href="http://james.apache.org/mime4j/apache-mime4j-dom">http://james.apache.org/mime4j/apache-mime4j-dom</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.apache.commons:commons-compress:jar:1.4.1-withoutxz (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1281652952"><i class="icon-info-sign"></i></button> 
+              <div id="_1281652952" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Commons Compress</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Apache Commons Compress software defines an API for working with compression and archive formats. These include: bzip2, gzip, pack200, xz and ar, cpio, jar, tar, zip, dump.</p><p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/compress/">http://commons.apache.org/compress/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.apache.pdfbox:pdfbox:jar:1.7.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1685624359"><i class="icon-info-sign"></i></button> 
+              <div id="_1685624359" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache PDFBox</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>The Apache PDFBox library is an open source Java tool for working with PDF documents.</p><p><b>URL: </b><a class="externalLink" href="http://www.apache.org/pdfbox-parent/pdfbox/">http://www.apache.org/pdfbox-parent/pdfbox/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <ul> 
+               <li>org.apache.pdfbox:fontbox:jar:1.7.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_444655876"><i class="icon-info-sign"></i></button> 
+                <div id="_444655876" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>Apache FontBox</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>The Apache FontBox library is an open source Java tool to obtain low level information from font files. FontBox is a subproject of Apache PDFBox.</p><p><b>URL: </b><a class="externalLink" href="http://pdfbox.apache.org/">http://pdfbox.apache.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+               <li>org.apache.pdfbox:jempbox:jar:1.7.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_481138240"><i class="icon-info-sign"></i></button> 
+                <div id="_481138240" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>Apache JempBox</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>The Apache JempBox library is an open source Java tool that implements Adobe's XMP(TM) specification. JempBox is a subproject of Apache PDFBox.</p><p><b>URL: </b><a class="externalLink" href="http://www.apache.org/pdfbox-parent/jempbox/">http://www.apache.org/pdfbox-parent/jempbox/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+              </ul></li> 
+             <li>org.bouncycastle:bcmail-jdk15:jar:1.45 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1988688964"><i class="icon-info-sign"></i></button> 
+              <div id="_1988688964" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Bouncy Castle CMS and S/MIME API</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>The Bouncy Castle Java CMS and S/MIME APIs for handling the CMS and S/MIME protocols. This jar contains CMS and S/MIME APIs for JDK 1.5. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs. If the S/MIME API is used, the JavaMail API and the Java activation framework will also be needed.</p><p><b>URL: </b><a class="externalLink" href="http://www.bouncycastle.org/java.html">http://www.bouncycastle.org/java.html</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.bouncycastle.org/licence.html">Bouncy Castle Licence</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.bouncycastle:bcprov-jdk15:jar:1.45 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_49026944"><i class="icon-info-sign"></i></button> 
+              <div id="_49026944" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Bouncy Castle Provider</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>The Bouncy Castle Crypto package is a Java implementation of cryptographic algorithms. This jar contains JCE provider and lightweight API for the Bouncy Castle Cryptography APIs for JDK 1.5.</p><p><b>URL: </b><a class="externalLink" href="http://www.bouncycastle.org/java.html">http://www.bouncycastle.org/java.html</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.bouncycastle.org/licence.html">Bouncy Castle Licence</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.apache.poi:poi:jar:3.8 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_542590974"><i class="icon-info-sign"></i></button> 
+              <div id="_542590974" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache POI</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Apache POI - Java API To Access Microsoft Format Files</p><p><b>URL: </b><a class="externalLink" href="http://poi.apache.org/">http://poi.apache.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.apache.poi:poi-scratchpad:jar:3.8 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_979221577"><i class="icon-info-sign"></i></button> 
+              <div id="_979221577" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache POI</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Apache POI - Java API To Access Microsoft Format Files</p><p><b>URL: </b><a class="externalLink" href="http://poi.apache.org/">http://poi.apache.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.apache.poi:poi-ooxml:jar:3.8 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1686807538"><i class="icon-info-sign"></i></button> 
+              <div id="_1686807538" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Apache POI</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Apache POI - Java API To Access Microsoft Format Files</p><p><b>URL: </b><a class="externalLink" href="http://poi.apache.org/">http://poi.apache.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <ul> 
+               <li>org.apache.poi:poi-ooxml-schemas:jar:3.8 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_546408145"><i class="icon-info-sign"></i></button> 
+                <div id="_546408145" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>Apache POI</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>Apache POI - Java API To Access Microsoft Format Files</p><p><b>URL: </b><a class="externalLink" href="http://poi.apache.org/">http://poi.apache.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div> 
+                <ul> 
+                 <li>org.apache.xmlbeans:xmlbeans:jar:2.3.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1567628550"><i class="icon-info-sign"></i></button> 
+                  <div id="_1567628550" style="" class=" collapse"> 
+                   <table border="0" class="bodyTable table table-striped table-hover"> 
+                    <thead> 
+                     <tr class="a"> 
+                      <th>XmlBeans</th> 
+                     </tr> 
+                    </thead> 
+                    <tbody> 
+                     <tr class="b"> 
+                      <td><p><b>Description: </b>XmlBeans main jar</p><p><b>URL: </b><a class="externalLink" href="http://xmlbeans.apache.org">http://xmlbeans.apache.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                     </tr> 
+                    </tbody> 
+                   </table> 
+                  </div></li> 
+                </ul></li> 
+               <li>dom4j:dom4j:jar:1.6.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_611916506"><i class="icon-info-sign"></i></button> 
+                <div id="_611916506" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>dom4j</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>dom4j: the flexible XML framework for Java</p><p><b>URL: </b><a class="externalLink" href="http://dom4j.org">http://dom4j.org</a></p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+              </ul></li> 
+             <li>org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1642218373"><i class="icon-info-sign"></i></button> 
+              <div id="_1642218373" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Streaming API for XML (STAX API 1.0)</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Provides open-source implementations of Sun specifications.</p><p><b>URL: </b><a class="externalLink" href="http://geronimo.apache.org/specs/geronimo-stax-api_1.0_spec">http://geronimo.apache.org/specs/geronimo-stax-api_1.0_spec</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_654372002"><i class="icon-info-sign"></i></button> 
+              <div id="_654372002" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>TagSoup</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>TagSoup is a SAX-compliant parser written in Java that, instead of parsing well-formed or valid XML, parses HTML as it is found in the wild: poor, nasty and brutish, though quite often far from short. TagSoup is designed for people who have to process this stuff using some semblance of a rational application design. By providing a SAX interface, it allows standard XML tools to be applied to even the worst HTML. TagSoup also includes a command-line processor that reads HTML files and can generate either clean HTML or well-formed XML that is a close approximation to XHTML.</p><p><b>URL: </b><a class="externalLink" href="http://home.ccil.org/~cowan/XML/tagsoup/">http://home.ccil.org/~cowan/XML/tagsoup/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>asm:asm:jar:3.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_2128699561"><i class="icon-info-sign"></i></button> 
+              <div id="_2128699561" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>ASM Core</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>A very small and fast Java bytecode manipulation framework</p><p><b>URL: </b><a class="externalLink" href="http://asm.objectweb.org/asm/">http://asm.objectweb.org/asm/</a></p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>com.googlecode.mp4parser:isoparser:jar:1.0-RC-1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_640040114"><i class="icon-info-sign"></i></button> 
+              <div id="_640040114" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>ISO Parser</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>A generic parser and writer for all ISO 14496 based files (MP4, Quicktime, DCF, PDCF, ...)</p><p><b>URL: </b><a class="externalLink" href="http://code.google.com/p/mp4parser/">http://code.google.com/p/mp4parser/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <ul> 
+               <li>org.aspectj:aspectjrt:jar:1.6.11 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_257458694"><i class="icon-info-sign"></i></button> 
+                <div id="_257458694" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>AspectJ runtime</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>The runtime needed to execute a program using AspectJ</p><p><b>URL: </b><a class="externalLink" href="http://www.aspectj.org">http://www.aspectj.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License - v 1.0</a></p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+              </ul></li> 
+             <li>com.drewnoakes:metadata-extractor:jar:2.6.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_370220109"><i class="icon-info-sign"></i></button> 
+              <div id="_370220109" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>metadata-extractor</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Java library for reading metadata from image files.</p><p><b>URL: </b><a class="externalLink" href="http://code.google.com/p/metadata-extractor/">http://code.google.com/p/metadata-extractor/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <ul> 
+               <li>com.adobe.xmp:xmpcore:jar:5.0.20 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_867796977"><i class="icon-info-sign"></i></button> 
+                <div id="_867796977" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>Adobe XMPCore</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>The Adobe XMP Core library</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+               <li>xerces:xercesImpl:jar:2.8.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1878175840"><i class="icon-info-sign"></i></button> 
+                <div id="_1878175840" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>Xerces2 Java Parser</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>Xerces2 is the next generation of high performance, fully compliant XML parsers in the Apache Xerces family. This new version of Xerces introduces the Xerces Native Interface (XNI), a complete framework for building parser components and configurations that is extremely modular and easy to program.</p><p><b>URL: </b><a class="externalLink" href="http://xerces.apache.org/xerces2-j/">http://xerces.apache.org/xerces2-j/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+              </ul></li> 
+             <li>de.l3s.boilerpipe:boilerpipe:jar:1.1.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1080940839"><i class="icon-info-sign"></i></button> 
+              <div id="_1080940839" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Boilerpipe -- Boilerplate Removal and Fulltext Extraction from HTML pages</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>The boilerpipe library provides algorithms to detect and remove the surplus &quot;clutter&quot; (boilerplate, templates) around the main textual content of a web page. The library already provides specific strategies for common tasks (for example: news article extraction) and may also be easily extended for individual problem settings. Extracting content is very fast (milliseconds), just needs the input document (no global or site-level information required) and is usually quite accurate. Boilerpipe is a Java library written by Christian Kohlsch&uuml;tter. It is released under the Apache License 2.0. The algorithms used by the library are based on (and extending) some concepts of the paper &quot;Boilerplate Detection using Shallow Text Features&quot; by Christian Kohlsch&uuml;tter et al., presented at WSDM 2010 -- The Third ACM International Conference on Web Search and Data Mining New York City, NY USA.</p><p><b>URL: </b><a class="externalLink" href="http://code.google.com/p/boilerpipe/">http://code.google.com/p/boilerpipe/</a></p><p><b>Project License: </b>Apache License 2.0</p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>rome:rome:jar:0.9 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1102620022"><i class="icon-info-sign"></i></button> 
+              <div id="_1102620022" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>ROME, RSS and atOM utilitiEs for Java</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>All Roads Lead to ROME. ROME is a set of Atom/RSS Java utilities that make it easy to work in Java with most syndication formats. Today it accepts all flavors of RSS (0.90, 0.91, 0.92, 0.93, 0.94, 1.0 and 2.0) and Atom 0.3 feeds. Rome includes a set of parsers and generators for the various flavors of feeds, as well as converters to convert from one format to another. The parsers can give you back Java objects that are either specific for the format you want to work with, or a generic normalized SyndFeed object that lets you work on with the data without bothering about the underlying format.</p><p><b>URL: </b><a class="externalLink" href="https://rome.dev.java.net/">https://rome.dev.java.net/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <ul> 
+               <li>jdom:jdom:jar:1.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_2083176449"><i class="icon-info-sign"></i></button> 
+                <div id="_2083176449" style="" class=" collapse"> 
+                 <table border="0" class="bodyTable table table-striped table-hover"> 
+                  <thead> 
+                   <tr class="a"> 
+                    <th>jdom</th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr class="b"> 
+                    <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div></li> 
+              </ul></li> 
+             <li>org.gagravarr:vorbis-java-core:jar:0.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_590233180"><i class="icon-info-sign"></i></button> 
+              <div id="_590233180" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Ogg and Vorbis for Java, Core</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Ogg and Vorbis toolkit and tools for Java</p><p><b>URL: </b><a class="externalLink" href="https://github.com/Gagravarr/VorbisJava">https://github.com/Gagravarr/VorbisJava</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+             <li>com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_271258833"><i class="icon-info-sign"></i></button> 
+              <div id="_271258833" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>juniversalchardet</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>Java port of universalchardet</p><p><b>URL: </b><a class="externalLink" href="http://juniversalchardet.googlecode.com/">http://juniversalchardet.googlecode.com/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.mozilla.org/MPL/MPL-1.1.html">Mozilla Public License 1.1 (MPL 1.1)</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+            </ul></li> 
+           <li>edu.ucar:netcdf:jar:4.2-min (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1743062294"><i class="icon-info-sign"></i></button> 
+            <div id="_1743062294" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>The NetCDF-Java Library</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>The NetCDF-Java Library is a Java interface to NetCDF files, as well as to many other types of scientific data formats.</p><p><b>URL: </b><a class="externalLink" href="http://www.unidata.ucar.edu/software/netcdf-java/">http://www.unidata.ucar.edu/software/netcdf-java/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.unidata.ucar.edu/software/netcdf/copyright.html">(MIT-style) netCDF C library license.</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+           <li>org.slf4j:jcl-over-slf4j:jar:1.6.4 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1134748544"><i class="icon-info-sign"></i></button> 
+            <div id="_1134748544" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>JCL 1.1.1 implemented over SLF4J</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>JCL 1.1.1 implementation over SLF4J</p><p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+           <li>org.apache.lucene:lucene-core:jar:2.4.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_16704516"><i class="icon-info-sign"></i></button> 
+            <div id="_16704516" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Lucene Core</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>Apache Lucene Java Core</p><p><b>URL: </b><a class="externalLink" href="http://lucene.apache.org/java/lucene-core">http://lucene.apache.org/java/lucene-core</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+           <li>org.apache.derby:derby:jar:10.5.3.0_1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_427427823"><i class="icon-info-sign"></i></button> 
+            <div id="_427427823" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Apache Derby Database Engine and Embedded JDBC Driver</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>Contains the core Apache Derby database engine, which also includes the embedded JDBC driver.</p><p><b>URL: </b><a class="externalLink" href="http://db.apache.org/derby/derby/">http://db.apache.org/derby/derby/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+          </ul></li> 
+         <li>org.apache.sling:org.apache.sling.adapter:jar:2.1.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1723523038"><i class="icon-info-sign"></i></button> 
+          <div id="_1723523038" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Apache Sling Adapter Manager Implementation</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Bundle implementing the AdapterManager and provides a convenience implementation of the Adaptable interface to make use of this AdapterManager.</p><p><b>URL: </b><a class="externalLink" href="http://sling.apache.org/org.apache.sling.adapter">http://sling.apache.org/org.apache.sling.adapter</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>rhino:js:jar:1.6R6 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_180073881"><i class="icon-info-sign"></i></button> 
+          <div id="_180073881" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Rhino</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Rhino: JavaScript for Java</p><p><b>URL: </b><a class="externalLink" href="http://www.mozilla.org/rhino/">http://www.mozilla.org/rhino/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.mozilla.org/MPL/MPL-1.1.html">Mozilla Public License version 1.1</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>commons-httpclient:commons-httpclient:jar:3.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_12017025"><i class="icon-info-sign"></i></button> 
+          <div id="_12017025" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>HttpClient</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>The HttpClient component supports the client-side of RFC 1945 (HTTP/1.0) and RFC 2616 (HTTP/1.1) , several related specifications (RFC 2109 (Cookies) , RFC 2617 (HTTP Authentication) , etc.), and provides a framework by which new request types (methods) or HTTP extensions can be created easily.</p><p><b>URL: </b><a class="externalLink" href="http://jakarta.apache.org/httpcomponents/httpclient-3.x/">http://jakarta.apache.org/httpcomponents/httpclient-3.x/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div> 
+          <ul> 
+           <li>commons-codec:commons-codec:jar:1.5 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_5844665"><i class="icon-info-sign"></i></button> 
+            <div id="_5844665" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>Commons Codec</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>The codec package contains simple encoder and decoders for various formats such as Base64 and Hexadecimal. In addition to these widely used encoders and decoders, the codec package also maintains a collection of phonetic encoding utilities.</p><p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/codec/">http://commons.apache.org/codec/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+          </ul></li> 
+         <li>junit:junit:jar:4.8.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1283524005"><i class="icon-info-sign"></i></button> 
+          <div id="_1283524005" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>JUnit</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>JUnit is a regression testing framework. It is used by the developer who implements unit tests in Java.</p><p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>org.jmock:jmock-junit4:jar:2.5.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_391950845"><i class="icon-info-sign"></i></button> 
+          <div id="_391950845" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>jMock JUnit 4 Extension</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b><a class="externalLink" href="http://jmock.org/license.html">BSD style</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div> 
+          <ul> 
+           <li>org.jmock:jmock:jar:2.5.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_57848781"><i class="icon-info-sign"></i></button> 
+            <div id="_57848781" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>jMock 2 Core</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b><a class="externalLink" href="http://jmock.org/license.html">BSD style</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div> 
+            <ul> 
+             <li>org.hamcrest:hamcrest-library:jar:1.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_878850805"><i class="icon-info-sign"></i></button> 
+              <div id="_878850805" style="" class=" collapse"> 
+               <table border="0" class="bodyTable table table-striped table-hover"> 
+                <thead> 
+                 <tr class="a"> 
+                  <th>Hamcrest Library</th> 
+                 </tr> 
+                </thead> 
+                <tbody> 
+                 <tr class="b"> 
+                  <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD style</a></p></td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div></li> 
+            </ul></li> 
+          </ul></li> 
+        </ul></li> 
+       <li>org.spockframework:spock-core:jar:0.7-groovy-2.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_635577307"><i class="icon-info-sign"></i></button> 
+        <div id="_635577307" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Spock Framework - Core Module</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Spock is a testing and specification framework for Java and Groovy applications. What makes it stand out from the crowd is its beautiful and highly expressive specification language. Thanks to its JUnit runner, Spock is compatible with most IDEs, build tools, and continuous integration servers. Spock is inspired from JUnit, jMock, RSpec, Groovy, Scala, Vulcans, and other fascinating life forms.</p><p><b>URL: </b><a class="externalLink" href="http://spockframework.org">http://spockframework.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>junit:junit-dep:jar:4.10 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_899420181"><i class="icon-info-sign"></i></button> 
+          <div id="_899420181" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>JUnit</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p><p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>org.hamcrest:hamcrest-core:jar:1.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_14280188"><i class="icon-info-sign"></i></button> 
+          <div id="_14280188" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Hamcrest Core</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>This is the core API of hamcrest matcher framework to be used by third-party framework providers. This includes the a foundation set of matcher implementations for common operations.</p><p><b>URL: </b><a class="externalLink" href="https://github.com/hamcrest/JavaHamcrest/hamcrest-core">https://github.com/hamcrest/JavaHamcrest/hamcrest-core</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+        </ul></li> 
+       <li>cglib:cglib-nodep:jar:2.2.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1826932554"><i class="icon-info-sign"></i></button> 
+        <div id="_1826932554" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Code Generation Library</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Code generation library with shaded ASM dependecies</p><p><b>URL: </b><a class="externalLink" href="http://cglib.sourceforge.net/">http://cglib.sourceforge.net/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">ASF 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>org.objenesis:objenesis:jar:1.3 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1967803099"><i class="icon-info-sign"></i></button> 
+        <div id="_1967803099" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Objenesis</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>A library for instantiating Java objects</p><p><b>URL: </b><a class="externalLink" href="http://objenesis.org">http://objenesis.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>org.springframework:org.springframework.test:jar:3.2.2.RELEASE (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1362671689"><i class="icon-info-sign"></i></button> 
+        <div id="_1362671689" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>org.springframework.test</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>There is currently no description associated with this project.</p><p><b>Project License: </b>No license is defined for this project.</p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></li> 
+       <li>org.springframework:spring-core:jar:3.2.2.RELEASE (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_784930147"><i class="icon-info-sign"></i></button> 
+        <div id="_784930147" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Spring Core</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Spring Core</p><p><b>URL: </b><a class="externalLink" href="https://github.com/SpringSource/spring-framework">https://github.com/SpringSource/spring-framework</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>commons-logging:commons-logging:jar:1.1.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_216590028"><i class="icon-info-sign"></i></button> 
+          <div id="_216590028" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Commons Logging</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other, well known logging systems.</p><p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/logging">http://commons.apache.org/logging</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+        </ul></li> 
+      </ul></li> 
+     <li>org.gebish:geb-spock:jar:0.9.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1005867361"><i class="icon-info-sign"></i></button> 
+      <div id="_1005867361" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Geb for Spock</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Geb (pronounced &quot;jeb&quot;) integration with the Spock test framework.</p><p><b>URL: </b><a class="externalLink" href="http://www.gebish.org">http://www.gebish.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <ul> 
+       <li>org.gebish:geb-core:jar:0.9.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_989430919"><i class="icon-info-sign"></i></button> 
+        <div id="_989430919" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>Geb Core</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Geb (pronounced &quot;jeb&quot;) is a browser automation solution. It brings together the power of WebDriver, the elegance of jQuery content selection, the robustness of Page Object modelling and the expressiveness of the Groovy language.</p><p><b>URL: </b><a class="externalLink" href="http://www.gebish.org">http://www.gebish.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>org.gebish:geb-ast:jar:0.9.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1068063726"><i class="icon-info-sign"></i></button> 
+          <div id="_1068063726" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Geb AST</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Geb (pronounced &quot;jeb&quot;) AST transformations module.</p><p><b>URL: </b><a class="externalLink" href="http://www.gebish.org">http://www.gebish.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>org.gebish:geb-implicit-assertions:jar:0.9.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_405825188"><i class="icon-info-sign"></i></button> 
+          <div id="_405825188" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Geb Implicit Assertions</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Geb (pronounced &quot;jeb&quot;) implicit assertion transform (used in conjunction with geb-core).</p><p><b>URL: </b><a class="externalLink" href="http://www.gebish.org">http://www.gebish.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+        </ul></li> 
+      </ul></li> 
+     <li>commons-io:commons-io:jar:2.2 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1182207659"><i class="icon-info-sign"></i></button> 
+      <div id="_1182207659" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Commons IO</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>The Commons IO library contains utility classes, stream implementations, file filters, file comparators, endian transformation classes, and much more.</p><p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/io/">http://commons.apache.org/io/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>org.apache.commons:commons-exec:jar:1.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1273537723"><i class="icon-info-sign"></i></button> 
+      <div id="_1273537723" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>Commons Exec</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>A library to reliably execute external processes from within the JVM</p><p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/exec/">http://commons.apache.org/exec/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div></li> 
+     <li>org.seleniumhq.selenium:selenium-firefox-driver:jar:2.31.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1594602344"><i class="icon-info-sign"></i></button> 
+      <div id="_1594602344" style="" class=" collapse"> 
+       <table border="0" class="bodyTable table table-striped table-hover"> 
+        <thead> 
+         <tr class="a"> 
+          <th>selenium-firefox-driver</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="b"> 
+          <td><p><b>Description: </b>Browser automation framework</p><p><b>URL: </b><a class="externalLink" href="http://selenium.googlecode.com/selenium-firefox-driver/">http://selenium.googlecode.com/selenium-firefox-driver/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <ul> 
+       <li>org.seleniumhq.selenium:selenium-remote-driver:jar:2.31.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1925787030"><i class="icon-info-sign"></i></button> 
+        <div id="_1925787030" style="" class=" collapse"> 
+         <table border="0" class="bodyTable table table-striped table-hover"> 
+          <thead> 
+           <tr class="a"> 
+            <th>selenium-remote-driver</th> 
+           </tr> 
+          </thead> 
+          <tbody> 
+           <tr class="b"> 
+            <td><p><b>Description: </b>Browser automation framework</p><p><b>URL: </b><a class="externalLink" href="http://selenium.googlecode.com/selenium-remote-driver/">http://selenium.googlecode.com/selenium-remote-driver/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <ul> 
+         <li>org.json:json:jar:20080701 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_465648696"><i class="icon-info-sign"></i></button> 
+          <div id="_465648696" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>JSON (JavaScript Object Notation)</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.</p><p><b>URL: </b><a class="externalLink" href="http://www.json.org/java/index.html">http://www.json.org/java/index.html</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.json.org/license.html">provided without support or warranty</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>org.seleniumhq.selenium:selenium-api:jar:2.31.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_175572886"><i class="icon-info-sign"></i></button> 
+          <div id="_175572886" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>selenium-api</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Browser automation framework</p><p><b>URL: </b><a class="externalLink" href="http://selenium.googlecode.com/selenium-api/">http://selenium.googlecode.com/selenium-api/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>org.apache.httpcomponents:httpclient:jar:4.2.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_392104179"><i class="icon-info-sign"></i></button> 
+          <div id="_392104179" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>HttpClient</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>HttpComponents Client (base module)</p><p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">http://hc.apache.org/httpcomponents-client</a></p><p><b>Project License: </b><a href="LICENSE.txt">Apache License</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div> 
+          <ul> 
+           <li>org.apache.httpcomponents:httpcore:jar:4.2.1 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1567159602"><i class="icon-info-sign"></i></button> 
+            <div id="_1567159602" style="" class=" collapse"> 
+             <table border="0" class="bodyTable table table-striped table-hover"> 
+              <thead> 
+               <tr class="a"> 
+                <th>HttpCore</th> 
+               </tr> 
+              </thead> 
+              <tbody> 
+               <tr class="b"> 
+                <td><p><b>Description: </b>HttpComponents Core (blocking I/O)</p><p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-core-ga">http://hc.apache.org/httpcomponents-core-ga</a></p><p><b>Project License: </b><a href="LICENSE.txt">Apache License</a></p></td> 
+               </tr> 
+              </tbody> 
+             </table> 
+            </div></li> 
+          </ul></li> 
+         <li>net.java.dev.jna:jna:jar:3.4.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_461827060"><i class="icon-info-sign"></i></button> 
+          <div id="_461827060" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Java Native Access</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Java Native Access</p><p><b>URL: </b><a class="externalLink" href="https://github.com/twall/jna">https://github.com/twall/jna</a></p><p><b>Project License: </b><a class="externalLink" href="http://creativecommons.org/licenses/LGPL/2.1/">LGPL, version 2.1</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+         <li>net.java.dev.jna:platform:jar:3.4.0 (test) <button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#_1792335025"><i class="icon-info-sign"></i></button> 
+          <div id="_1792335025" style="" class=" collapse"> 
+           <table border="0" class="bodyTable table table-striped table-hover"> 
+            <thead> 
+             <tr class="a"> 
+              <th>Java Native Access Platform</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr class="b"> 
+              <td><p><b>Description: </b>Java Native Access Platform</p><p><b>URL: </b><a class="externalLink" href="https://github.com/twall/jna">https://github.com/twall/jna</a></p><p><b>Project License: </b><a class="externalLink" href="http://creativecommons.org/licenses/LGPL/2.1/">LGPL, version 2.1</a></p></td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div></li> 
+        </ul></li> 
+      </ul></li> 
+    </ul></li> 
+  </ul> 
+ </div> 
+</div> 
+<a name="Licenses"></a> 
+<div class="section"> 
+ <h2 id="Licenses">Licenses</h2> 
+ <p><b>ASF 2.0: </b>Code Generation Library</p> 
+ <p><b>LGPL, version 2.1: </b>Java Native Access, Java Native Access Platform</p> 
+ <p><b>BSD style: </b>Hamcrest Library, jMock 2 Core, jMock JUnit 4 Extension</p> 
+ <p><b>Mozilla Public License 1.1 (MPL 1.1): </b>juniversalchardet</p> 
+ <p><b>New BSD License: </b>Hamcrest Core</p> 
+ <p><b>Apache 2: </b>Apache Derby Database Engine and Embedded JDBC Driver, ISO Parser, Lucene Core, Objenesis</p> 
+ <p><b>Unknown: </b>ASM Core, Adobe Granite Crypto Support, Adobe Granite I18N Module, Adobe Granite Replication, Adobe Granite XSS Protection, Adobe XMPCore, Day Communique 5 Commons Library, Day Communique 5 Search, Day Communique 5 Statistics, Day Communique 5 Tagging, Day Communique 5 WCM API, Day Communique 5 WCM Commons, Day Communique 5 WCM Core Implementation, Day Communique 5 WCM Multi Site Management API, dom4j, jdom, jsp-api, org.osgi.core, org.springframework.test, servlet-api</p> 
+ <p><b>Apache License, Version 2.0: </b>osgi.cmpn</p> 
+ <p><b>Bouncy Castle Licence: </b>Bouncy Castle CMS and S/MIME API, Bouncy Castle Provider</p> 
+ <p><b>Eclipse Public License - v 1.0: </b>AspectJ runtime</p> 
+ <p><b>provided without support or warranty: </b>JSON (JavaScript Object Notation)</p> 
+ <p><b>Day Specification License: </b>Content Repository for JavaTM Technology API</p> 
+ <p><b>The Apache Software License, Version 2.0: </b>Annotations for SCR, Apache Felix Declarative Services, Apache FontBox, Apache JAMES Mime4j (Core), Apache JAMES Mime4j (DOM), Apache Jackrabbit API, Apache JempBox, Apache PDFBox, Apache POI, Apache Sling API, Apache Sling Adapter Manager Implementation, Apache Sling JCR Resource Resolver, Apache Sling Repository API Bundle, Apache Sling Testing Utilities, Apache Tika core, Apache Tika parsers, Apache Tika plugin for Ogg, Vorbis and FLAC, CQ Groovy Console, CQ Groovy Extension, CQ Groovy Testing Tools, Commons Codec, Commons Collections, Commons Compress, Commons DBCP, Commons Email, Commons Exec, Commons IO, Commons Logging, Commons Pool, Geb AST, Geb Core, Geb Implicit Assertions, Geb for Spock, Groovy, Guava: Google Core Libraries for Java, Jackrabbit Core, Jackrabbit JCR Commons, Jackrabbit SPI, Jackrabbit SPI Commons, Ogg and Vorbis for Java, Core, ROME, RSS and atOM utilitiEs for Java, Spock Framework - Core Module, Spring Core, Streaming API for XML (STAX API 1.0), Xerces2 Java Parser, XmlBeans, metadata-extractor, selenium-api, selenium-firefox-driver, selenium-remote-driver</p> 
+ <p><b>Public domain, Sun Microsoystems: </b>Dough Lea's util.concurrent package</p> 
+ <p><b>Day Specification License addendum: </b>Content Repository for JavaTM Technology API</p> 
+ <p><b>Apache License: </b>HttpClient, HttpCore</p> 
+ <p><b>Apache License 2.0: </b>Boilerpipe -- Boilerplate Removal and Fulltext Extraction from HTML pages, TagSoup</p> 
+ <p><b>Common Public License Version 1.0: </b>JUnit</p> 
+ <p><b>MIT License: </b>JCL 1.1.1 implemented over SLF4J, SLF4J API Module, SLF4J NOP Binding</p> 
+ <p><b>Common Development and Distribution License (CDDL) v1.0: </b>JavaBeans Activation Framework (JAF), JavaMail API</p> 
+ <p><b>(MIT-style) netCDF C library license.: </b>The NetCDF-Java Library</p> 
+ <p><b>Mozilla Public License version 1.1: </b>Rhino</p> 
+</div> 
+<a name="Dependency_File_Details"></a> 
+<div class="section"> 
+ <h2 id="Dependency_File_Details">Dependency File Details</h2> 
+ <table border="0" class="bodyTable table table-striped table-hover"> 
+  <thead> 
+   <tr class="b"> 
+    <th>Total</th> 
+    <th>Size</th> 
+    <th>Entries</th> 
+    <th>Classes</th> 
+    <th>Packages</th> 
+    <th>JDK Rev</th> 
+    <th>Debug</th> 
+    <th>Sealed</th> 
+   </tr> 
+  </thead> 
+  <thead> 
+   <tr class="a"> 
+    <th>Filename</th> 
+    <th>Size</th> 
+    <th>Entries</th> 
+    <th>Classes</th> 
+    <th>Packages</th> 
+    <th>JDK Rev</th> 
+    <th>Debug</th> 
+    <th>Sealed</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr class="b"> 
+    <td>asm-3.1.jar</td> 
+    <td>42.02 kB</td> 
+    <td>24</td> 
+    <td>23</td> 
+    <td>2</td> 
+    <td>1.2</td> 
+    <td>release</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>cglib-nodep-2.2.2.jar</td> 
+    <td>319.25 kB</td> 
+    <td>255</td> 
+    <td>251</td> 
+    <td>9</td> 
+    <td>1.2</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>com.adobe.granite.crypto-0.0.22.jar</td> 
+    <td>2.11 MB</td> 
+    <td>29</td> 
+    <td>11</td> 
+    <td>2</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>com.adobe.granite.i18n-5.5.8.jar</td> 
+    <td>41.67 kB</td> 
+    <td>45</td> 
+    <td>22</td> 
+    <td>5</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>com.adobe.granite.replication.core-5.5.38.jar</td> 
+    <td>218.81 kB</td> 
+    <td>153</td> 
+    <td>127</td> 
+    <td>7</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>com.adobe.granite.xssprotection-5.5.22.jar</td> 
+    <td>2.54 MB</td> 
+    <td>2,010</td> 
+    <td>1,695</td> 
+    <td>95</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>xmpcore-5.0.20.jar</td> 
+    <td>125.68 kB</td> 
+    <td>74</td> 
+    <td>57</td> 
+    <td>6</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>cq-groovy-extension-0.3.4.jar</td> 
+    <td>68.30 kB</td> 
+    <td>50</td> 
+    <td>32</td> 
+    <td>4</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>cq-groovy-testing-0.3.6.jar</td> 
+    <td>94.03 kB</td> 
+    <td>56</td> 
+    <td>30</td> 
+    <td>6</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>cq-commons-5.6.2.jar</td> 
+    <td>167.03 kB</td> 
+    <td>128</td> 
+    <td>100</td> 
+    <td>10</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>cq-search-5.6.4.jar</td> 
+    <td>134.77 kB</td> 
+    <td>110</td> 
+    <td>81</td> 
+    <td>12</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>cq-statistics-5.6.2.jar</td> 
+    <td>62.02 kB</td> 
+    <td>64</td> 
+    <td>36</td> 
+    <td>9</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>cq-tagging-5.6.2.jar</td> 
+    <td>80.41 kB</td> 
+    <td>60</td> 
+    <td>34</td> 
+    <td>5</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>cq-msm-api-5.6.2.jar</td> 
+    <td>17.72 kB</td> 
+    <td>34</td> 
+    <td>20</td> 
+    <td>1</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>cq-wcm-api-5.6.4.jar</td> 
+    <td>57.62 kB</td> 
+    <td>85</td> 
+    <td>65</td> 
+    <td>8</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>cq-wcm-commons-5.6.2.jar</td> 
+    <td>30.08 kB</td> 
+    <td>28</td> 
+    <td>14</td> 
+    <td>2</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>cq-wcm-core-5.6.10.jar</td> 
+    <td>457.42 kB</td> 
+    <td>241</td> 
+    <td>200</td> 
+    <td>19</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>metadata-extractor-2.6.2.jar</td> 
+    <td>206.24 kB</td> 
+    <td>131</td> 
+    <td>104</td> 
+    <td>15</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>guava-14.0.1.jar</td> 
+    <td>2.09 MB</td> 
+    <td>1,618</td> 
+    <td>1,594</td> 
+    <td>13</td> 
+    <td>1.6</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>juniversalchardet-1.0.3.jar</td> 
+    <td>215.64 kB</td> 
+    <td>77</td> 
+    <td>62</td> 
+    <td>6</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>isoparser-1.0-RC-1.jar</td> 
+    <td>509.02 kB</td> 
+    <td>328</td> 
+    <td>283</td> 
+    <td>30</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>commons-codec-1.5.jar</td> 
+    <td>71.38 kB</td> 
+    <td>60</td> 
+    <td>43</td> 
+    <td>5</td> 
+    <td>1.4</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>commons-collections-3.2.1.jar</td> 
+    <td>561.90 kB</td> 
+    <td>482</td> 
+    <td>458</td> 
+    <td>12</td> 
+    <td>1.2</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>commons-dbcp-1.2.2.jar</td> 
+    <td>118.90 kB</td> 
+    <td>63</td> 
+    <td>51</td> 
+    <td>4</td> 
+    <td>1.3</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>commons-httpclient-3.1.jar</td> 
+    <td>297.85 kB</td> 
+    <td>183</td> 
+    <td>167</td> 
+    <td>8</td> 
+    <td>1.2</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>commons-io-2.2.jar</td> 
+    <td>169.52 kB</td> 
+    <td>126</td> 
+    <td>108</td> 
+    <td>6</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>commons-logging-1.1.1.jar</td> 
+    <td>59.26 kB</td> 
+    <td>42</td> 
+    <td>28</td> 
+    <td>2</td> 
+    <td>1.1</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>commons-pool-1.3.jar</td> 
+    <td>60.63 kB</td> 
+    <td>48</td> 
+    <td>39</td> 
+    <td>2</td> 
+    <td>1.3</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>concurrent-1.3.4.jar</td> 
+    <td>184.85 kB</td> 
+    <td>230</td> 
+    <td>221</td> 
+    <td>2</td> 
+    <td>1.1</td> 
+    <td>release</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>boilerpipe-1.1.0.jar</td> 
+    <td>89.87 kB</td> 
+    <td>95</td> 
+    <td>76</td> 
+    <td>12</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>dom4j-1.6.1.jar</td> 
+    <td>306.54 kB</td> 
+    <td>208</td> 
+    <td>190</td> 
+    <td>14</td> 
+    <td>1.3</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>netcdf-4.2-min.jar</td> 
+    <td>4.13 MB</td> 
+    <td>2,173</td> 
+    <td>1,983</td> 
+    <td>110</td> 
+    <td>1.6</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>activation-1.1.jar</td> 
+    <td>61.51 kB</td> 
+    <td>50</td> 
+    <td>38</td> 
+    <td>3</td> 
+    <td>1.4</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>jcr-2.0.jar</td> 
+    <td>67.62 kB</td> 
+    <td>138</td> 
+    <td>120</td> 
+    <td>10</td> 
+    <td>1.4</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>mail-1.4.1.jar</td> 
+    <td>437.18 kB</td> 
+    <td>303</td> 
+    <td>279</td> 
+    <td>13</td> 
+    <td>1.4</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>jsp-api-2.0.jar</td> 
+    <td>49.31 kB</td> 
+    <td>56</td> 
+    <td>42</td> 
+    <td>3</td> 
+    <td>1.2</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>servlet-api-2.4.jar</td> 
+    <td>95.40 kB</td> 
+    <td>67</td> 
+    <td>42</td> 
+    <td>2</td> 
+    <td>1.2</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>jdom-1.0.jar</td> 
+    <td>149.66 kB</td> 
+    <td>87</td> 
+    <td>75</td> 
+    <td>8</td> 
+    <td>1.1</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>junit-4.8.2.jar</td> 
+    <td>231.78 kB</td> 
+    <td>267</td> 
+    <td>230</td> 
+    <td>30</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>junit-dep-4.10.jar</td> 
+    <td>228.60 kB</td> 
+    <td>264</td> 
+    <td>231</td> 
+    <td>28</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>jna-3.4.0.jar</td> 
+    <td>985.09 kB</td> 
+    <td>142</td> 
+    <td>103</td> 
+    <td>3</td> 
+    <td>1.4</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>platform-3.4.0.jar</td> 
+    <td>892.03 kB</td> 
+    <td>410</td> 
+    <td>394</td> 
+    <td>6</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>commons-compress-1.4.1-withoutxz.jar</td> 
+    <td>235.65 kB</td> 
+    <td>153</td> 
+    <td>127</td> 
+    <td>13</td> 
+    <td>1.5</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>commons-email-1.2.jar</td> 
+    <td>31.56 kB</td> 
+    <td>23</td> 
+    <td>10</td> 
+    <td>1</td> 
+    <td>1.4</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>commons-exec-1.1.jar</td> 
+    <td>51.31 kB</td> 
+    <td>52</td> 
+    <td>36</td> 
+    <td>4</td> 
+    <td>1.3</td> 
+    <td>debug</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>derby-10.5.3.0_1.jar</td> 
+    <td>2.40 MB</td> 
+    <td>1,496</td> 
+    <td>1,436</td> 
+    <td>96</td> 
+    <td>1.5</td> 
+    <td>release</td> 
+    <td>sealed</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>46</td> 
+    <td>21.34 MB</td> 
+    <td>12,818</td> 
+    <td>11,368</td> 
+    <td>663</td> 
+    <td>1.6</td> 
+    <td>43</td> 
+    <td>1</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>compile: 10</td> 
+    <td>compile: 3.29 MB</td> 
+    <td>compile: 1,036</td> 
+    <td>compile: 826</td> 
+    <td>compile: 61</td> 
+    <td>-</td> 
+    <td>compile: 10</td> 
+    <td>-</td> 
+   </tr> 
+   <tr class="a"> 
+    <td>test: 35</td> 
+    <td>test: 17.98 MB</td> 
+    <td>test: 11,732</td> 
+    <td>test: 10,510</td> 
+    <td>test: 598</td> 
+    <td>-</td> 
+    <td>test: 32</td> 
+    <td>test: 1</td> 
+   </tr> 
+   <tr class="b"> 
+    <td>provided: 1</td> 
+    <td>provided: 68.30 kB</td> 
+    <td>provided: 50</td> 
+    <td>provided: 32</td> 
+    <td>provided: 4</td> 
+    <td>-</td> 
+    <td>provided: 1</td> 
+    <td>-</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	</div><!-- /container -->
+	
+	<!-- Footer
+	================================================== -->
+	<footer class="well">
+		<div class="container">
+			<div class="row">
+				<div class="span9 bottom-nav">
+					<ul class="nav nav-list">
+						<li class="nav-header">Project Documentation</li>
+						<li>
+							<a href="project-info.html" title="Project Information">Project Information <i class="icon-chevron-down"></i></a>
+							<ul class="nav nav-list">
+						<li>
+							<a href="project-summary.html" title="Project Summary">Project Summary </a>
+						</li>
+						<li class="active">
+							<a href="#" title="Dependencies">Dependencies </a>
+						</li>
+						<li>
+							<a href="plugins.html" title="Project Plugins">Project Plugins </a>
+						</li>
+						<li>
+							<a href="license.html" title="Project License">Project License </a>
+						</li>
+							</ul>
+						</li>
+						<li>
+							<a href="project-reports.html" title="Project Reports">Project Reports <i class="icon-chevron-right"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+	<div class="container subfooter">
+		<div class="row">
+			<div class="span12">
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p class="copyright">Copyright &copy;2013 <a href="http://www.citytechinc.com">CITYTECH, Inc.</a>. All Rights Reserved.</p>
+				<p class="version-date"><span class="projectVersion">Version: 4.1.1. </span><span class="publishDate">Last Published: 2013-08-15. </span></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- Fallback jQuery loading from Google CDN:
+	     http://stackoverflow.com/questions/1014203/best-way-to-use-googles-hosted-jquery-but-fall-back-to-my-hosted-library-on-go -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		if (typeof jQuery == 'undefined')
+		{
+			document.write(unescape("%3Cscript src='./js/jquery-1.8.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>
+	
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/lightbox.js"></script>
+	<script src="./js/jquery.smooth-scroll.min.js"></script>
+	<!-- back button support for smooth scroll -->
+	<script src="./js/jquery.ba-bbq.min.js"></script>
+	<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+
+	<script src="./js/reflow-skin.js"></script>
+	
+	</body>
+</html>
