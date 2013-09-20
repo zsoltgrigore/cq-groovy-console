@@ -129,9 +129,13 @@
  <ol style="list-style-type: decimal"> 
   <li><p>Install the console package.</p> 
    <div class="source">
-    <pre>mvn install -P local-author
+    <pre>mvn install -P local
 </pre>
-   </div></li> 
+   </div><p>or</p> 
+   <div class="source">
+    <pre>mvn install -P local,replicate
+</pre>
+   </div><p>The optional <tt>replicate</tt> profile activates the deployed package to the local publish instance.</p></li> 
   <li><p><a class="externalLink" href="http://localhost:4502/groovyconsole">Verify</a> the installation.</p></li> 
  </ol>
  <p>Additional build profiles may be added in the projects pom.xml to support deployment to non-localhost CQ5 servers.</p>
@@ -173,7 +177,7 @@
 			<div class="span12">
 				<p class="pull-right"><a href="#">Back to top</a></p>
 				<p class="copyright">Copyright &copy;2013 <a href="http://www.citytechinc.com">CITYTECH, Inc.</a>. All Rights Reserved.</p>
-				<p class="version-date"><span class="projectVersion">Version: 4.2.0. </span><span class="publishDate">Last Published: 2013-08-22. </span></p>
+				<p class="version-date"><span class="projectVersion">Version: 5.0.0. </span><span class="publishDate">Last Published: 2013-09-20. </span></p>
 			</div>
 		</div>
 	</div>
