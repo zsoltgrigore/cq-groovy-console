@@ -64,8 +64,6 @@
 										<a href="project-info.html" title="Project Information">Project Information </a>
 										<ul class="dropdown-menu">
 											<li><a href="project-summary.html" title="Project Summary">Project Summary </a></li>
-											<li><a href="dependencies.html" title="Dependencies">Dependencies </a></li>
-											<li><a href="plugins.html" title="Project Plugins">Project Plugins </a></li>
 											<li><a href="license.html" title="Project License">Project License </a></li>
 										</ul>
 									</li>
@@ -112,37 +110,37 @@
 	<div class="row">
 		<div class="span12">
 			<div class="body-content">
-<div class="section">
- <h2 id="Overview">Overview</h2>
+<div class="section"> 
+ <h2 id="Overview">Overview</h2> 
  <p>The CQ Groovy Console provides an interface for running <a class="externalLink" href="http://groovy.codehaus.org/">Groovy</a> scripts in the Adobe CQ5 container. Scripts can be created to manipulate content in the JCR, call OSGi services, or execute arbitrary code using the CQ, Sling, or JCR APIs. After installing the package in CQ5 (instructions below), see the <a class="externalLink" href="http://localhost:4502/groovyconsole">console page</a> for documentation on the available bindings and methods. Sample scripts are included in the package for reference.</p>
-</div>
-<div class="section">
+</div> 
+<div class="section"> 
  <h2 id="Requirements">Requirements</h2> 
  <ul> 
   <li>CQ (AEM) 5.6 running on localhost:4502</li> 
   <li>Versions 3.x.x are compatible with CQ 5.4 and 5.5 (see GitHub tags).</li> 
  </ul>
-</div>
-<div class="section">
- <h2 id="Installation">Installation</h2>
+</div> 
+<div class="section"> 
+ <h2 id="Installation">Installation</h2> 
  <p><a class="externalLink" href="http://maven.apache.org/">Maven</a> 2.x+ is required to build the project.</p> 
  <ol style="list-style-type: decimal"> 
-  <li><p>Install the console package.</p> 
-   <div class="source">
+  <li> <p>Install the console package.</p> 
+   <div class="source"> 
     <pre>mvn install -P local
 </pre>
-   </div><p>or</p> 
-   <div class="source">
+   </div> <p>or</p> 
+   <div class="source"> 
     <pre>mvn install -P local,replicate
 </pre>
-   </div><p>The optional <tt>replicate</tt> profile activates the deployed package to the local publish instance.</p></li> 
-  <li><p><a class="externalLink" href="http://localhost:4502/groovyconsole">Verify</a> the installation.</p></li> 
- </ol>
- <p>Additional build profiles may be added in the projects pom.xml to support deployment to non-localhost CQ5 servers.</p>
-</div>
-<div class="section">
- <h2 id="Notes">Notes</h2>
- <p>Sample scripts can be found in the src/main/scripts directory.</p>
+   </div> <p>The optional <tt>replicate</tt> profile activates the deployed package to the local publish instance.</p></li> 
+  <li> <p><a class="externalLink" href="http://localhost:4502/groovyconsole">Verify</a> the installation.</p></li> 
+ </ol> 
+ <p>Additional build profiles may be added in the project’s pom.xml to support deployment to non-localhost CQ5 servers.</p>
+</div> 
+<div class="section"> 
+ <h2 id="Notes">Notes</h2> 
+ <p>Sample scripts can be found in the src/main/scripts directory.</p> 
  <p>Please contact <a class="externalLink" href="mailto:mdaugherty@citytechinc.com">Mark Daugherty</a> with any questions; issues can be submitted via <a class="externalLink" href="https://github.com/Citytechinc/cq-groovy-console/issues">GitHub</a>.</p>
 </div>
 			</div>
@@ -176,8 +174,7 @@
 		<div class="row">
 			<div class="span12">
 				<p class="pull-right"><a href="#">Back to top</a></p>
-				<p class="copyright">Copyright &copy;2013 <a href="http://www.citytechinc.com">CITYTECH, Inc.</a>. All Rights Reserved.</p>
-				<p class="version-date"><span class="projectVersion">Version: 5.0.1. </span><span class="publishDate">Last Published: 2013-10-14. </span></p>
+				<p class="copyright">Copyright &copy;2014 <a href="http://www.citytechinc.com">CITYTECH, Inc.</a>. All Rights Reserved.</p>
 			</div>
 		</div>
 	</div>
