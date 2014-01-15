@@ -139,6 +139,14 @@
  <p>Additional build profiles may be added in the project’s pom.xml to support deployment to non-localhost CQ5 servers.</p>
 </div> 
 <div class="section"> 
+ <h2 id="Context_Path_Support">Context Path Support</h2> 
+ <p>If you are running AEM with a context path, set the Maven property <tt>cq.context.path</tt> during installation.</p> 
+ <div class="source"> 
+  <pre>mvn install -P local -Dcq.context.path=/context
+</pre>
+ </div>
+</div> 
+<div class="section"> 
  <h2 id="Notes">Notes</h2> 
  <p>Sample scripts can be found in the src/main/scripts directory.</p> 
  <p>Please contact <a class="externalLink" href="mailto:mdaugherty@citytechinc.com">Mark Daugherty</a> with any questions; issues can be submitted via <a class="externalLink" href="https://github.com/Citytechinc/cq-groovy-console/issues">GitHub</a>.</p>
