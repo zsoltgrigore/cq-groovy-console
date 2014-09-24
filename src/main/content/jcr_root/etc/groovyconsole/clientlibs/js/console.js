@@ -161,64 +161,70 @@ var GroovyConsole = function () {
             });
 
             $('#run-script').click(function () {
-                if ($('#run-script').hasClass('disabled')) {
-                    return;
-                }
-
-                reset();
-
-                var script = editor.getSession().getValue();
-
-                if (script.length) {
-                    editor.setReadOnly(true);
-
-                    GroovyConsole.disableToolbar();
-
-                    $('#run-script-text').text('Running...');
-
-                    $.post(CQ.shared.HTTP.getContextPath() + '/bin/groovyconsole/post.json', {
-                        script: script
-                    }).done(function (data) {
-                        var result = data.executionResult;
-                        var output = data.outputText;
-                        var stacktrace = data.stacktraceText;
-                        var runtime = data.runningTime;
-
-                        if (stacktrace && stacktrace.length) {
-                            $('#stacktrace').text(stacktrace).fadeIn('fast');
-                        } else {
-                            if (runtime && runtime.length) {
-                                $('#running-time pre').text(runtime);
-                                $('#running-time').fadeIn('fast');
-                            }
-
-                            if (result && result.length) {
-                                $('#result pre').text(result);
-                                $('#result').fadeIn('fast');
-                            }
-
-                            if (output && output.length) {
-                                $('#output pre').text(output);
-                                $('#output').fadeIn('fast');
-                            }
-                        }
-                    }).fail(function (jqXHR) {
-                        if (jqXHR.status == 403) {
-                            showError('You do not have permission to run scripts in the Groovy Console.');
-                        } else {
-                            showError('Script execution failed.  Check error.log file.');
-                        }
-                    }).always(function () {
-                        editor.setReadOnly(false);
-
-                        GroovyConsole.enableToolbar();
-
-                        $('#run-script-text').text('Run Script');
-                    });
-                } else {
-                    showError('Script is empty.');
-                }
+                GroovyConsole.runScript(false);
             });
+                
+            $('#dry-run-script').click(function() {
+                GroovyConsole.runScript(true);
+            });
+        },
+
+        runScript: function (dryRun) {
+            if ($('#run-script').hasClass('disabled') || $('#dry-run-script').hasClass('disabled')) {
+                return;
+            }
+
+            reset();
+
+            var script = editor.getSession().getValue();
+
+            if (script.length) {
+                editor.setReadOnly(true);
+
+                GroovyConsole.disableToolbar();
+
+                $.post(CQ.shared.HTTP.getContextPath() + '/bin/groovyconsole/post.json', {
+                    script: script,
+                    dryRun: dryRun
+                }).done(function (data) {
+                    var result = data.executionResult;
+                    var output = data.outputText;
+                    var stacktrace = data.stacktraceText;
+                    var runtime = data.runningTime;
+
+                    if (stacktrace && stacktrace.length) {
+                        $('#stacktrace').text(stacktrace).fadeIn('fast');
+                    } else {
+                        if (runtime && runtime.length) {
+                            $('#running-time pre').text(runtime);
+                            $('#running-time').fadeIn('fast');
+                        }
+
+                        if (result && result.length) {
+                            $('#result pre').text(result);
+                            $('#result').fadeIn('fast');
+                        }
+
+                        if (output && output.length) {
+                            $('#output pre').text(output);
+                            $('#output').fadeIn('fast');
+                        }
+                    }
+                }).fail(function (jqXHR) {
+                    if (jqXHR.status == 403) {
+                        showError('You do not have permission to run scripts in the Groovy Console.');
+                    } else {
+                        showError('Script execution failed.  Check error.log file.');
+                    }
+                }).always(function () {
+                    editor.setReadOnly(false);
+
+                    GroovyConsole.enableToolbar();
+
+                });
+            } else {
+                showError('Script is empty.');
+            }
         },
 
         disableToolbar: function () {

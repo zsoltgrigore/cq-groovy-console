@@ -5,6 +5,9 @@
         <a class="btn btn-success" href="#" id="run-script">
             <i class="icon-play icon-white"></i> <span id="run-script-text">Run Script</span>
         </a>
+        <a class="btn btn-success" href="#" id="dry-run-script">
+            <i class="icon-play-circle icon-white"></i> <span id="dry-run-script-text">Dry Run Script</span>
+        </a>
     </div>
 
     <div class="btn-group">
