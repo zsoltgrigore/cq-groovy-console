@@ -22,6 +22,11 @@
 
         <div id="table" style="display: none;"></div>
 
+        <div id="changes" class="alert alert-info" style="display: none;">
+            <ul>
+            </ul>
+        </div>
+
         <div id="result" class="alert alert-success" style="display: none;">
             <h6>Result</h6>
             <pre></pre>

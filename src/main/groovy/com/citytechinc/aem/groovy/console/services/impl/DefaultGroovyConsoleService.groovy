@@ -12,7 +12,9 @@ import com.day.cq.replication.Replicator
 import com.day.cq.search.PredicateGroup
 import com.day.cq.search.QueryBuilder
 import com.day.cq.wcm.api.PageManager
+
 import groovy.util.logging.Slf4j
+
 import org.apache.commons.lang3.CharEncoding
 import org.apache.felix.scr.ScrService
 import org.apache.felix.scr.annotations.Activate
@@ -21,6 +23,7 @@ import org.apache.felix.scr.annotations.Reference
 import org.apache.felix.scr.annotations.Service
 import org.apache.jackrabbit.util.Text
 import org.apache.sling.api.SlingHttpServletRequest
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.MultipleCompilationErrorsException
@@ -98,6 +101,7 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
         def runningTime = ""
         def output = ""
         def error = ""
+		List<String> changes = new ArrayList<String>()
 
         def scriptContent = request.getRequestParameter(PARAMETER_SCRIPT)?.getString(CharEncoding.UTF_8)
         def dryRun = request.getRequestParameter(PARAMETER_DRYRUN)?.getString(CharEncoding.UTF_8).toBoolean()
@@ -113,7 +117,9 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
                 
                 if (session.hasPendingChanges()) {
                     // list changes
-                    
+					Resource contentResource = resourceResolver.getResource("/content")
+					changes = getListOfChanges(contentResource.adaptTo(Node.class), null)
+					
                     if (!dryRun) {
                         session.save()
                         LOG.info("Session saved")
@@ -156,7 +162,7 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
             errorWriter.close()
         }
 
-        [executionResult: result as String, outputText: output, stacktraceText: error, runningTime: runningTime]
+        [executionResult: result as String, outputText: output, stacktraceText: error, runningTime: runningTime, changes: changes]
     }
 
     @Override
@@ -176,6 +182,25 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
 
         [scriptName: fileName]
     }
+	
+	List<String> getListOfChanges(Node node, List<String> changes) {
+		changes = new ArrayList<String>()
+		changes.add("/content/geometrixx-outdoors/en.html");
+		/*if (node.hasNodes()) {
+			if (changes == null) {
+				changes = new ArrayList<String>()
+			}
+			def nodeIt = node.getNodes()
+			try { 
+				child = nodeIt.nextNode()
+				//if changed, get containing page with pagemanager
+				getListOfChanges(child, changes)
+			} catch (NoSuchElementException nsee) {
+				return;
+			}
+		}*/
+		changes
+	}
 
     def createConfiguration() {
         def configuration = new CompilerConfiguration()

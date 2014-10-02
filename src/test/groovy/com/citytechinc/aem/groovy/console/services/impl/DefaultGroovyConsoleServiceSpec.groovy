@@ -6,7 +6,9 @@ import com.citytechinc.aem.groovy.console.services.EmailService
 import com.day.cq.commons.jcr.JcrConstants
 import com.day.cq.replication.Replicator
 import com.day.cq.search.QueryBuilder
+
 import org.osgi.framework.BundleContext
+
 import spock.lang.Shared
 
 import javax.jcr.RepositoryException
@@ -26,6 +28,8 @@ class DefaultGroovyConsoleServiceSpec extends ProsperSpec {
     static final def PATH_FILE = "$PATH_FOLDER/$SCRIPT_FILE_NAME"
 
     static final def PATH_FILE_CONTENT = "$PATH_FILE/${JcrConstants.JCR_CONTENT}"
+	
+	static final def PARAMETER_DRYRUN = "dryRun"
 
     @Shared consoleService
 
@@ -54,8 +58,9 @@ class DefaultGroovyConsoleServiceSpec extends ProsperSpec {
     def "run script"() {
         setup:
         def script = scriptAsString
+		def dryRun = 0
         def request = requestBuilder.build {
-            parameters = [(PARAMETER_SCRIPT): script]
+            parameters = [(PARAMETER_SCRIPT): script, (PARAMETER_DRYRUN) : dryRun]
         }
 
         when:

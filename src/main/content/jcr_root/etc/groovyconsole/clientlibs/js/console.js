@@ -191,6 +191,7 @@ var GroovyConsole = function () {
                     var output = data.outputText;
                     var stacktrace = data.stacktraceText;
                     var runtime = data.runningTime;
+                    var changes = data.changes;
 
                     if (stacktrace && stacktrace.length) {
                         $('#stacktrace').text(stacktrace).fadeIn('fast');
@@ -208,6 +209,14 @@ var GroovyConsole = function () {
                         if (output && output.length) {
                             $('#output pre').text(output);
                             $('#output').fadeIn('fast');
+                        }
+                        
+                        if (changes && changes.length) {
+                        	$.each(changes, function(index, value){
+                        		var $row = $("<li/>").append($("<a/>").attr("href", value).text(value));
+                        		$('#changes ul').append($row);
+                        	})
+                            $('#changes').fadeIn('fast');
                         }
                     }
                 }).fail(function (jqXHR) {
