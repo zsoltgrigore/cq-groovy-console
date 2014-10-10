@@ -213,8 +213,9 @@ var GroovyConsole = function () {
                         
                         if (changes && changes.length) {
                         	$.each(changes, function(index, value){
-                        		var $row = $("<li/>").append($("<a/>").attr("href", value).text(value));
-                        		$('#changes ul').append($row);
+                        		var htmlValue = value + ".html";
+                        		var $row = $("<li/>").append($("<a/>").attr("href", htmlValue).text(htmlValue));
+                        		$('#changes pre ul').append($row);
                         	})
                             $('#changes').fadeIn('fast');
                         }

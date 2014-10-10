@@ -11,6 +11,7 @@ import com.day.cq.replication.ReplicationOptions
 import com.day.cq.replication.Replicator
 import com.day.cq.search.PredicateGroup
 import com.day.cq.search.QueryBuilder
+import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager
 
 import groovy.util.logging.Slf4j
@@ -82,6 +83,8 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
     ScrService scrService
 
     BundleContext bundleContext
+	
+	Page page
 
     @Override
     Map<String, String> runScript(SlingHttpServletRequest request) {
@@ -117,8 +120,9 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
                 
                 if (session.hasPendingChanges()) {
                     // list changes
-					Resource contentResource = resourceResolver.getResource("/content")
-					changes = getListOfChanges(contentResource.adaptTo(Node.class), null)
+					if (page) {
+						changes = getListOfChanges(page.adaptTo(Resource), pageManager, null)
+					}
 					
                     if (!dryRun) {
                         session.save()
@@ -183,22 +187,27 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
         [scriptName: fileName]
     }
 	
-	List<String> getListOfChanges(Node node, List<String> changes) {
-		changes = new ArrayList<String>()
-		changes.add("/content/geometrixx-outdoors/en.html");
-		/*if (node.hasNodes()) {
-			if (changes == null) {
-				changes = new ArrayList<String>()
+	List<String> getListOfChanges(Resource res, PageManager pageManager, List<String> changes) {
+		if (changes == null) {
+			changes = new ArrayList<String>()
+		}
+		
+		def childIt = res.listChildren()
+		
+		while (childIt.hasNext()) {
+			def childRes = childIt.next()
+			Node childNode = childRes.adaptTo(Node)
+			
+			if (childNode != null && childNode.modified) {
+				Page parentPage = pageManager.getContainingPage(childRes) 
+				if (parentPage != null) {
+					changes.add(parentPage.path)
+				}
 			}
-			def nodeIt = node.getNodes()
-			try { 
-				child = nodeIt.nextNode()
-				//if changed, get containing page with pagemanager
-				getListOfChanges(child, changes)
-			} catch (NoSuchElementException nsee) {
-				return;
-			}
-		}*/
+			
+			getListOfChanges(childRes, pageManager, changes)
+		}
+		
 		changes
 	}
 
@@ -243,7 +252,7 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
             }
 
             delegate.getPage = { String path ->
-                pageManager.getPage(path)
+                page = pageManager.getPage(path)
             }
 
             delegate.move = { String src ->
